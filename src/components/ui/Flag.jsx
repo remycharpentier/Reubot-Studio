@@ -13,15 +13,21 @@ const itFlag = <img src={it} alt="" className="flag" />;
 const chFlag = <img src={ch} alt="" className="flag" />;
 
 export default function Flag() {
-  const countryFlags = [usFlag, frFlag, deFlag, esFlag, itFlag, chFlag];
+  const countryFlags = [
+    { id: 1, name: usFlag },
+    { id: 2, name: frFlag },
+    { id: 3, name: deFlag },
+    { id: 4, name: esFlag },
+    { id: 5, name: itFlag },
+    { id: 6, name: chFlag },
+  ];
 
   return (
     <>
-      {/* <p>{usFlag}</p> */}
       <ul>
         {countryFlags.map((item) => (
-          <li key={item}>
-            <a href="#">{item}</a>
+          <li key={item.id}>
+            <a href="#">{item.name}</a>
           </li>
         ))}
       </ul>

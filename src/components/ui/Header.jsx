@@ -12,13 +12,13 @@ export default function Header() {
       <StyledHeader>
         <Container>
           <Row>
-            <Col md="2" className="logo-titre">
+            <Col className="logo-titre">
               <a href="#">
                 <img src={logo} alt="" />
               </a>
               <h2>{title}</h2>
             </Col>
-            <Col col md="10" className="nav-bar">
+            <Col className="nav-bar">
               <NavBar></NavBar>
             </Col>
           </Row>
