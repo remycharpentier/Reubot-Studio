@@ -13,7 +13,7 @@ export default function Header() {
         <Container>
           <Row>
             <Col md="2" className="logo-titre">
-              <img src={logo} alt="" style={{ borderRadius: 10, width: 150 }} />
+              <img src={logo} alt="" />
               <h2>{title}</h2>
             </Col>
             <Col col md="10" className="nav-bar">

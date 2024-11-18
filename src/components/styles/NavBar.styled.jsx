@@ -12,9 +12,4 @@ export const StyledNavBar = styled.div`
     text-transform: uppercase;
     font-weight: bold;
   }
-  .nav-bar {
-    display: flex;
-    flex-flow: column-reverse;
-    color: red;
-  }
 `;

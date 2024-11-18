@@ -24,9 +24,9 @@ export default function Footer() {
                 Video Games Development
               </span>
             </Col>
-            <Col>
+            <Col className="adresse">
               <h3>Adresse</h3>
-              <img src={location} alt="" style={{ width: 60 }} />
+              <img src={location} alt="" />
               <br />
               <span id="adresse-texte">45 rue Thiac 33000 Bordeaux</span>
             </Col>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <img src={facebook} alt="" />
               </div>
             </Col>
-            <Col>
+            <Col className="translate">
               <h3>Translate</h3>
               <Flag></Flag>
             </Col>
