@@ -12,4 +12,9 @@ export const StyledNavBar = styled.div`
     text-transform: uppercase;
     font-weight: bold;
   }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
 `;

@@ -20,7 +20,9 @@ export default function Flag() {
       {/* <p>{usFlag}</p> */}
       <ul>
         {countryFlags.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <a href="#">{item}</a>
+          </li>
         ))}
       </ul>
     </>

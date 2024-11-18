@@ -7,7 +7,9 @@ export default function NavBar() {
       <StyledNavBar>
         <ul>
           {navItems.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              <a href="#">{item}</a>
+            </li>
           ))}
         </ul>
       </StyledNavBar>

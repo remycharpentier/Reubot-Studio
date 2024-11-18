@@ -13,7 +13,9 @@ export default function Header() {
         <Container>
           <Row>
             <Col md="2" className="logo-titre">
-              <img src={logo} alt="" />
+              <a href="#">
+                <img src={logo} alt="" />
+              </a>
               <h2>{title}</h2>
             </Col>
             <Col col md="10" className="nav-bar">

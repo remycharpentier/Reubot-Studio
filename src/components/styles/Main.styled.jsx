@@ -3,7 +3,7 @@ import hero from "../../assets/img/game10.jpg";
 
 export const StyledMain = styled.div`
   min-height: 63vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${hero});
   background-repeat: no-repeat;
   background-position: center;

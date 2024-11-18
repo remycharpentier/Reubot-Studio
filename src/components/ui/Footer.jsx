@@ -1,9 +1,14 @@
 import { Col, Container, Row } from "@bootstrap-styled/v4";
+
+// IMG
 import logo from "../../assets/img/logo.jpeg";
 import location from "../../assets/img/location.png";
 import linkedin from "../../assets/img/linkedin.png";
 import git from "../../assets/img/git.png";
 import facebook from "../../assets/img/facebook.png";
+import twitter from "../../assets/img/twitter.png";
+
+// COMP
 import Flag from "./Flag";
 import { StyledFooter } from "../styles/Footer.styled";
 
@@ -26,7 +31,9 @@ export default function Footer() {
             </Col>
             <Col className="adresse">
               <h3>Adresse</h3>
-              <img src={location} alt="" />
+              <a href="#">
+                <img src={location} alt="" />
+              </a>
               <br />
               <span id="adresse-texte">45 rue Thiac 33000 Bordeaux</span>
             </Col>
@@ -36,6 +43,7 @@ export default function Footer() {
                 <img src={linkedin} alt="" />
                 <img src={git} alt="" />
                 <img src={facebook} alt="" />
+                <img src={twitter} alt="" />
               </div>
             </Col>
             <Col className="translate">
