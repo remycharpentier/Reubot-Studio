@@ -3,12 +3,13 @@ import { StyledHeader } from "../styles/Header.styled";
 
 //IMG
 import logo from "../../assets/img/logo.jpeg";
+import brush from "../../assets/img/brush.png";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const title = "Reubot Studio";
+const companyName = "Reubot Studio";
 
 export default function Header() {
   return (
@@ -18,9 +19,10 @@ export default function Header() {
           <Row>
             <Col className="logo-titre">
               <a href="#">
-                <img src={logo} alt="" />
+                <img src={logo} alt="" className="logo-img" />
               </a>
-              <h2>{title}</h2>
+              <h1 className="company-name">{companyName}</h1>
+              <img src={brush} alt="" className="brush-img" />
             </Col>
             <Col className="nav-bar">
               <NavBar></NavBar>

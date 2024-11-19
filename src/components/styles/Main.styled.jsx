@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import hero from "../../assets/img/game10.jpg";
 
 export const StyledMain = styled.div`
   min-height: 63vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${hero});
+    url(/src/assets/img/game13.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
-  background-size: cover;
-  background-position: 100% 76%;
+  background-size: 139%;
+  background-position-x: right;
   #main-container {
     color: #f2f2f2;
     padding: 16px 12px;
@@ -45,6 +43,13 @@ export const StyledMain = styled.div`
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     min-height: 450px;
+    .h5 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
   }
   button {
     display: flex;

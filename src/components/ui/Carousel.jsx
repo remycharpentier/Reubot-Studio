@@ -13,7 +13,7 @@ const games = [
   },
   {
     id: 2,
-    titre: "Kunitsu-Gami: Path of the Godess",
+    titre: "Monster Hunter Stories 2 : Wings of ruin",
     img: imgGame2,
     price: 19.99,
   },

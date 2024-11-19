@@ -13,6 +13,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+const companyName = "Reubot Studio";
+
 export default function Footer() {
   return (
     <>
@@ -25,7 +27,9 @@ export default function Footer() {
               <span>
                 Copyright © 2024
                 <br />
-                Reubot Studio
+                <span className="company-name" id="footer-company-name">
+                  {companyName}
+                </span>
                 <br />
                 Video Games Development
               </span>

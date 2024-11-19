@@ -16,6 +16,9 @@ export const StyledFooter = styled.div`
     width: 88px;
     margin-top: 5px;
   }
+  #footer-company-name {
+    font-size: 25px;
+  }
   #div-reseaux img {
     margin-right: 10px;
     width: 50px;
