@@ -1,16 +1,16 @@
 import { StyledMain } from "../styles/Main.styled";
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 
 //IMG
-import front_game1 from "../../assets/img/front_game1.jpg";
+import Carousel from "./Carousel";
+import { StyledCarousel } from "../styles/Carousel.styled";
 
 export default function Main() {
   return (
     <>
       <StyledMain>
         <Container id="main-container">
+          <br />
           <h1>Bienvenue !</h1>
           <p>
             Bienvenue chez Reubot Studio, un studio de développement de jeux
@@ -33,29 +33,16 @@ export default function Main() {
             Reubot Studio – L'imaginaire à portée de main.
           </p>
           <br />
+          <div id="our-vg">
+            <h3> Nos jeux vidéo</h3>
+          </div>
+          <br />
           <hr />
           <br />
-          <Card>
-            <Card.Img
-              variant="top"
-              src={front_game1}
-              className="front-game-img"
-            />
-            <Card.Body>
-              <Card.Title>Titre Jeu Video 1</Card.Title>
-              <Card.Text>
-                En ligne
-                <br />
-                Solo
-                <br />
-                Aventure
-                <br />
-                Monde ouvert
-                <br />
-                <span className="price">59.99€</span>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <StyledCarousel>
+            <Carousel></Carousel>
+          </StyledCarousel>
+          <br />
         </Container>
       </StyledMain>
     </>
