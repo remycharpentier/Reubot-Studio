@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.div`
+  #row-footer {
+    margin-top: 16px;
+  }
   span {
     font-weight: bold;
   }
@@ -11,7 +14,7 @@ export const StyledFooter = styled.div`
   #footer-logo {
     border-radius: 10px;
     width: 88px;
-    margin-top: 19px;
+    margin-top: 5px;
   }
   #div-reseaux img {
     margin-right: 10px;

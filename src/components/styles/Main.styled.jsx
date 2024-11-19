@@ -14,7 +14,27 @@ export const StyledMain = styled.div`
     padding: 50px;
     color: #f2f2f2;
   }
+  .card {
+    padding: 0;
+    width: 15rem;
+    color: #f2f2f2;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
   .front-game-img {
-    width: 250px;
+    width: cover;
+  }
+  button {
+    display: flex;
+    justify-self: end;
+  }
+  .price {
+    display: flex;
+    justify-self: end;
+    font-weight: bold;
   }
 `;

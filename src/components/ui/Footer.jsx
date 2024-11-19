@@ -18,7 +18,7 @@ export default function Footer() {
     <>
       <StyledFooter>
         <Container>
-          <Row>
+          <Row id="row-footer">
             <Col>
               <img src={logo} alt="" id="footer-logo" />
               <br />

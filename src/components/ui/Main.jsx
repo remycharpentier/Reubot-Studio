@@ -32,7 +32,10 @@ export default function Main() {
             <br />
             Reubot Studio – L'imaginaire à portée de main.
           </p>
-          <Card bg={"light"} style={{ width: "18rem" }}>
+          <br />
+          <hr />
+          <br />
+          <Card>
             <Card.Img
               variant="top"
               src={front_game1}
@@ -48,8 +51,9 @@ export default function Main() {
                 Aventure
                 <br />
                 Monde ouvert
+                <br />
+                <span className="price">59.99€</span>
               </Card.Text>
-              <Button variant="primary">Acheter</Button>
             </Card.Body>
           </Card>
         </Container>
