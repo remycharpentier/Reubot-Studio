@@ -1,14 +1,15 @@
-import { Container } from "@bootstrap-styled/v4";
 import { StyledMain } from "../styles/Main.styled";
-// import hero from "../../assets/img/game10.jpg";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-// const title = "Reubot Studio";
+//IMG
+import front_game1 from "../../assets/img/front_game1.jpg";
 
 export default function Main() {
   return (
     <>
       <StyledMain>
-        {/* <img src={hero} alt="" id="hero-img" /> */}
         <Container id="main-container">
           <h1>Bienvenue !</h1>
           <p>
@@ -31,6 +32,26 @@ export default function Main() {
             <br />
             Reubot Studio – L'imaginaire à portée de main.
           </p>
+          <Card bg={"light"} style={{ width: "18rem" }}>
+            <Card.Img
+              variant="top"
+              src={front_game1}
+              className="front-game-img"
+            />
+            <Card.Body>
+              <Card.Title>Titre Jeu Video 1</Card.Title>
+              <Card.Text>
+                En ligne
+                <br />
+                Solo
+                <br />
+                Aventure
+                <br />
+                Monde ouvert
+              </Card.Text>
+              <Button variant="primary">Acheter</Button>
+            </Card.Body>
+          </Card>
         </Container>
       </StyledMain>
     </>

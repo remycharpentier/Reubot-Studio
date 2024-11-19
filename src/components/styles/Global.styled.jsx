@@ -4,7 +4,7 @@ export const StyledGlobal = createGlobalStyle`
 
 @font-face {
   font-family: RobotoSlab;
-  src: url("../../public/font/RobotoSlab-VariableFont_wght.ttf");
+  src: url("../../../font/RobotoSlab-VariableFont_wght.ttf");
 }
 
   body {

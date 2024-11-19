@@ -1,5 +1,3 @@
-import { Col, Container, Row } from "@bootstrap-styled/v4";
-
 // IMG
 import logo from "../../assets/img/logo.jpeg";
 import location from "../../assets/img/location.png";
@@ -11,6 +9,9 @@ import twitter from "../../assets/img/twitter.png";
 // COMP
 import Flag from "./Flag";
 import { StyledFooter } from "../styles/Footer.styled";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Footer() {
   return (

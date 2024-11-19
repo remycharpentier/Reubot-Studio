@@ -14,4 +14,7 @@ export const StyledMain = styled.div`
     padding: 50px;
     color: #f2f2f2;
   }
+  .front-game-img {
+    width: 250px;
+  }
 `;
