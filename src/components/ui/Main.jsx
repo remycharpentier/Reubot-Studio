@@ -13,9 +13,9 @@ export default function Main() {
           <br />
           <h1>Bienvenue !</h1>
           <p>
-            Bienvenue chez Reubot Studio, un studio de développement de jeux
-            vidéo basé à Bordeaux. Notre équipe passionnée allie créativité et
-            technologie pour créer des expériences de jeu uniques et immersives.
+            Reubot Studio, un studio de développement de jeux vidéo basé à
+            Bordeaux. Notre équipe passionnée allie créativité et technologie
+            pour créer des expériences de jeu uniques et immersives.
             <br />
             <br />
             Nous croyons que chaque jeu est une œuvre d'art, et nous nous

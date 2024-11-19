@@ -5,6 +5,7 @@ import linkedin from "../../assets/img/linkedin.png";
 import git from "../../assets/img/git.png";
 import facebook from "../../assets/img/facebook.png";
 import twitter from "../../assets/img/twitter.png";
+import brush from "../../assets/img/brush.png";
 
 // COMP
 import Flag from "./Flag";
@@ -30,6 +31,7 @@ export default function Footer() {
                 <span className="company-name" id="footer-company-name">
                   {companyName}
                 </span>
+                <img src={brush} alt="" className="brush-img" />
                 <br />
                 Video Games Development
               </span>

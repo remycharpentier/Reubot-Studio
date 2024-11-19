@@ -10,4 +10,8 @@ export const StyledCarousel = styled.div`
   li {
     list-style-type: none;
   }
+  .price {
+    text-align: end;
+    font-size: 2.5rem;
+  }
 `;

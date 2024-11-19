@@ -19,6 +19,13 @@ export const StyledFooter = styled.div`
   #footer-company-name {
     font-size: 25px;
   }
+  .brush-img {
+    position: absolute;
+    top: 1308px;
+    left: 167px;
+    z-index: -1;
+    width: 300px;
+  }
   #div-reseaux img {
     margin-right: 10px;
     width: 50px;
