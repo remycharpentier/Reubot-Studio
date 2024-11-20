@@ -8,6 +8,7 @@ import brush from "../../assets/img/brush.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Form } from "react-bootstrap";
 
 const companyName = "Reubot Studio";
 
@@ -25,6 +26,21 @@ export default function Header() {
               <img src={brush} alt="" className="brush-img" />
             </Col>
             <Col className="nav-bar">
+              <Form>
+                <Form.Group
+                  controlId="custom-switch"
+                  className="groupe-switch admin"
+                >
+                  <Form.Label className="me-2">Mode admin</Form.Label>
+                  <Form.Check type="switch" id="custom-switch" />
+                </Form.Group>
+              </Form>
+              <Form>
+                <Form.Group controlId="custom-switch" className="groupe-switch">
+                  <Form.Label className="me-2">Mode clair / sombre</Form.Label>
+                  <Form.Check type="switch" id="custom-switch" />
+                </Form.Group>
+              </Form>
               <NavBar></NavBar>
             </Col>
           </Row>
