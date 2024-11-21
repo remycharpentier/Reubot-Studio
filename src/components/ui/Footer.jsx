@@ -58,6 +58,8 @@ export default function Footer() {
               <Flag></Flag>
             </Col>
           </Row>
+          <br />
+          <hr />
         </Container>
       </StyledFooter>
     </>
