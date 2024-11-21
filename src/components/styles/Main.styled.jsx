@@ -35,14 +35,14 @@ export const StyledMain = styled.div`
   }
   .card {
     padding: 0;
-    width: 15rem;
+    width: 19rem;
     color: #f2f2f2;
     background: rgba(255, 255, 255, 0.22);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 450px;
+    min-height: 620px;
     .h5 {
       text-overflow: ellipsis;
       overflow: hidden;
@@ -52,13 +52,21 @@ export const StyledMain = styled.div`
       min-height: 48px;
     }
   }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card-text {
+    margin: 0;
+  }
   button {
     display: flex;
     justify-self: end;
   }
   .price {
-    display: flex;
-    justify-self: end;
+    margin-top: auto;
+    align-self: flex-end;
     font-weight: bold;
   }
 `;
