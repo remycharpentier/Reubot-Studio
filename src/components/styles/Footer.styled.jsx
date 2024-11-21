@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.div`
+  position: relative;
   #row-footer {
     margin-top: 16px;
   }
@@ -21,7 +22,7 @@ export const StyledFooter = styled.div`
   }
   .brush-img {
     position: absolute;
-    top: 1492px;
+    top: 115px;
     left: 167px;
     z-index: -1;
     width: 300px;
