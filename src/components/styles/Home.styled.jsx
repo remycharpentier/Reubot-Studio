@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-  #our-vg {
+  .titre-ligne {
     text-align: center;
     h3 {
       position: relative;
