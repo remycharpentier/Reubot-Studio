@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMain = styled.div`
-  min-height: 63vh;
+  min-height: 54vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/src/assets/img/game13.jpg);
   background-repeat: no-repeat;

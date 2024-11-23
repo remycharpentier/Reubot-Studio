@@ -6,31 +6,37 @@ import { StyledBody } from "./components/styles/Body.styled";
 import { StyledGlobal } from "./components/styles/Global.styled";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/User/Home";
+import Games from "./pages/User/Games";
+import News from "./pages/User/News";
+import AboutUs from "./pages/User/AboutUs";
+import Contact from "./pages/User/Contact";
+import PageError from "./pages/User/PageError";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <PageError />,
     children: [
       {
         path: "home",
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
         path: "games",
-        element: "Page Jeux",
+        element: <Games />,
       },
       {
         path: "news",
-        element: "Page Actualités",
+        element: <News />,
       },
       {
         path: "about-us",
-        element: "Page A propos",
+        element: <AboutUs />,
       },
       {
         path: "contact",
-        element: "Page Contact",
+        element: <Contact />,
       },
     ],
   },
