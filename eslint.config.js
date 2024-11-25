@@ -12,7 +12,7 @@ export default [
       ecmaVersion: 2020,
       globals: globals.browser,
       //POUR API KEY MAPS
-      process: "readonly",
+      // process: "readonly",
       parserOptions: {
         ecmaVersion: "latest",
         ecmaFeatures: { jsx: true },
