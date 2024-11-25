@@ -26,6 +26,12 @@ export default function Header() {
               <img src={brush} alt="" className="brush-img" />
             </Col>
             <Col className="nav-bar">
+              <span className="wip">
+                <strong>
+                  {" "}
+                  ⚒ A faire : Le mode admin & le changement de thème
+                </strong>
+              </span>
               <Form>
                 <Form.Group
                   controlId="custom-switch"

@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
+  .team-img {
+    height: 300px;
+    object-fit: cover;
+    width: 700px;
+    float: right;
+    shape-outside: content-box;
+  }
   .titre-ligne {
     text-align: center;
     h3 {

@@ -4,7 +4,11 @@ import Main from "./components/ui/Main";
 import Footer from "./components/ui/Footer";
 import { StyledBody } from "./components/styles/Body.styled";
 import { StyledGlobal } from "./components/styles/Global.styled";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import Home from "./pages/User/Home";
 import Games from "./pages/User/Games";
 import News from "./pages/User/News";
@@ -37,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "/",
+        element: <Navigate to="/home" replace />,
       },
     ],
   },

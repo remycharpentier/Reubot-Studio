@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { StyledNavBar } from "../styles/NavBar.styled";
 
 export default function NavBar() {
@@ -35,7 +36,7 @@ export default function NavBar() {
         <ul>
           {navItems.map((item) => (
             <li key={item.id}>
-              <a href={item.namePath}>{item.name}</a>
+              <NavLink to={item.namePath}>{item.name}</NavLink>
             </li>
           ))}
         </ul>

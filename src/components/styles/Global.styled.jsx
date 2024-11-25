@@ -23,4 +23,7 @@ export const StyledGlobal = createGlobalStyle`
       font-family: Iceland;
       font-weight: bolder;
     }
+    .wip::first-letter{
+      color: #E1C800 
+    }
  }`;
