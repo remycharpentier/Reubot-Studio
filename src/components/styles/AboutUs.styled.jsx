@@ -14,4 +14,9 @@ export const StyledAboutUs = styled.div`
     margin-right: 50px;
     margin-left: 0;
   }
+  .studio-img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+  }
 `;

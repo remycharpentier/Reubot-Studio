@@ -29,7 +29,7 @@ export default function Header() {
               <span className="wip">
                 <strong>
                   {" "}
-                  ⚒ A faire : Le mode admin & le changement de thème
+                  ⚒ A faire : les features admin & changement de thème
                 </strong>
               </span>
               <Form>
