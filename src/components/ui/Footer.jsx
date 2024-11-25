@@ -1,6 +1,6 @@
 // IMG
 import logo from "../../assets/img/logo.jpeg";
-import location from "../../assets/img/location.png";
+import location from "../../assets/img/location_logo.png";
 import linkedin from "../../assets/img/linkedin.png";
 import git from "../../assets/img/git.png";
 import facebook from "../../assets/img/facebook.png";

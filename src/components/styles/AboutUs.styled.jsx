@@ -18,5 +18,6 @@ export const StyledAboutUs = styled.div`
     height: 450px;
     object-fit: cover;
     width: 100%;
+    margin-bottom: 30px;
   }
 `;

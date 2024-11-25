@@ -3,6 +3,7 @@
 import imgTeam from "../../assets/img/team1.jpg";
 import imgTeam2 from "../../assets/img/team5.jpg";
 import imgStudio from "../../assets/img/studio.jpg";
+import imgLocation from "../../assets/img/location.png";
 import { StyledAboutUs } from "../../components/styles/AboutUs.styled";
 
 // TEST API GOOGLE
@@ -116,6 +117,7 @@ export default function AboutUs() {
           </p>
           <img src={imgStudio} alt="" className="studio-img" />
           <h1 className="wip">⚒ A faire : API Maps de mon adresse</h1>
+          <img src={imgLocation} alt="" className="studio-img" />
         </article>
       </StyledAboutUs>
     </>
