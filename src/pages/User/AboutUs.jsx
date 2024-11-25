@@ -93,6 +93,13 @@ export default function AboutUs() {
             Rejoignez-nous dans cette aventure passionnante et découvrez les
             mondes que nous avons créés pour vous !
           </p>
+
+          <h2>Notre Studio</h2>
+          <p>
+            Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
+            Bordeaux.
+          </p>
+          <h1 className="wip">⚒ A faire : API Maps de mon adresse</h1>
         </article>
       </StyledAboutUs>
     </>
