@@ -7,6 +7,7 @@ export const StyledAboutUs = styled.div`
     width: 700px;
     float: right;
     margin-left: 50px;
+    border-radius: 10px;
   }
 
   .team-img2 {
@@ -19,5 +20,6 @@ export const StyledAboutUs = styled.div`
     object-fit: cover;
     width: 100%;
     margin-bottom: 30px;
+    border-radius: 10px;
   }
 `;

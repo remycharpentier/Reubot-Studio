@@ -7,15 +7,16 @@ export const StyledHome = styled.div`
     width: 700px;
     float: right;
     shape-outside: content-box;
+    border-radius: 10px;
   }
   .titre-ligne {
     text-align: center;
-    h3 {
+    h1 {
       position: relative;
       display: inline-block;
     }
-    h3::before,
-    h3::after {
+    h1::before,
+    h1::after {
       content: " ";
       display: block;
       position: absolute;
@@ -24,7 +25,7 @@ export const StyledHome = styled.div`
       width: 100px;
       border-bottom: 1px solid #fff;
     }
-    h3::after {
+    h1::after {
       left: auto;
       right: -120px;
     }

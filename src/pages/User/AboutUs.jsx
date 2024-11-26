@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // TEST API GOOGLE
 // import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import imgTeam from "../../assets/img/team1.jpg";
@@ -90,9 +91,9 @@ export default function AboutUs() {
           </p>
           <br />
 
-          <h1 className="wip">
+          <h3 className="wip">
             ⚒ A faire : slider de chaque membre de l'équipe
-          </h1>
+          </h3>
           <br />
 
           <h2>Notre Vision</h2>
@@ -116,7 +117,7 @@ export default function AboutUs() {
             Bordeaux.
           </p>
           <img src={imgStudio} alt="" className="studio-img" />
-          <h1 className="wip">⚒ A faire : API Maps de mon adresse</h1>
+          <h3 className="wip">⚒ A faire : API Maps de mon adresse</h3>
           <img src={imgLocation} alt="" className="studio-img" />
         </article>
       </StyledAboutUs>
