@@ -2,6 +2,8 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
 import { useState } from "react";
 
+import correct from "../../assets/img/correct.png";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     lastName: "",
@@ -10,6 +12,8 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+  const [feedbackMessage, setFeedbackMessage] = useState(""); // État pour le message de retour
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -22,6 +26,25 @@ export default function Contact() {
     console.log("Données du formulaire :", formData);
     // Envoyer la data en console, front ou back
     // Ici dans la console
+
+    // Simule un envoi de données
+    const isSuccess = true;
+
+    if (isSuccess) {
+      setFeedbackMessage("Merci ! Votre message a été envoyé avec succès !");
+    } else {
+      setFeedbackMessage(
+        "Une erreur s'est produite lors de l'envoi de votre message."
+      );
+    }
+    // Réinitialise le form si nécessaire
+    setFormData({
+      lastName: "",
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
   return (
     <>
@@ -82,6 +105,12 @@ export default function Contact() {
                 Envoyer
               </Button>
             </Form>
+            {feedbackMessage && (
+              <span className="feebackMessage">
+                <img src={correct} alt="" className="correct" />
+                {feedbackMessage}
+              </span>
+            )}
           </Col>
           <Col>
             <h3>Informations</h3>
@@ -117,6 +146,12 @@ export default function Contact() {
               Mail
               <br />
               remycha@msn.com
+              <br />
+              <br />
+              <br />
+              <h3 className="wip">
+                ⚒ A faire : Gérer les cas où il manque les infos au formulaire
+              </h3>
             </p>
           </Col>
         </Row>

@@ -7,4 +7,12 @@ export const StyledContact = styled.div`
   button {
     float: right;
   }
+  .feebackMessage {
+    display: block;
+    margin-top: 10px;
+  }
+  .correct {
+    width: 20px;
+    margin-right: 10px;
+  }
 `;
