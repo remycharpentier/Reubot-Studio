@@ -1,7 +1,28 @@
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
+import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    lastName: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Données du formulaire :", formData);
+    // Envoyer la data en console, front ou back
+    // Ici dans la console
+  };
   return (
     <>
       <StyledContact>
@@ -9,26 +30,52 @@ export default function Contact() {
         <h1>Nous contacter</h1>
         <Row>
           <Col>
-            <Form className="form">
-              <Form.Group className="mb-3" controlId="formBasicFamilyName">
+            <Form className="form" onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formBasiclastName">
                 <Form.Label>Nom</Form.Label>
-                <Form.Control type="familyName" />
+                <Form.Control
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Prénom</Form.Label>
-                <Form.Control type="name" />
+                <Form.Control
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Adresse eMail</Form.Label>
-                <Form.Control type="email" />
+                <Form.Label>eMail</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPhone">
                 <Form.Label>Téléphone</Form.Label>
-                <Form.Control type="phone" />
+                <Form.Control
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicMessage">
                 <Form.Label>Message</Form.Label>
-                <Form.Control type="message" rows={5} as="textarea" />
+                <Form.Control
+                  as="textarea"
+                  rows={5}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
               </Form.Group>
               <br />
               <Button variant="success" type="submit">
@@ -37,8 +84,8 @@ export default function Contact() {
             </Form>
           </Col>
           <Col>
+            <h3>Informations</h3>
             <p>
-              <h3>Informations</h3>
               Vous avez des questions ou autres demandes ?
               <br />
               N'hésitez pas à nous contacter. Notre équipe en charge vous
