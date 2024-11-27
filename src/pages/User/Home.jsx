@@ -13,7 +13,7 @@ export default function Home() {
           <h1>Bienvenue !</h1>
           <img src={imgTeam} alt="" className="team-img" />
           <p>
-            Reubot Studio, un studio de développement de jeux vidéo basé à
+            Reubot Studio est un studio de création de jeux vidéo basé à
             Bordeaux. Notre équipe passionnée allie créativité et technologie
             pour créer des expériences de jeu uniques et immersives.
             <br />

@@ -147,13 +147,12 @@ export default function Contact() {
               <br />
               remycha@msn.com
               <br />
-              <br />
-              <br />
-              <h3 className="wip">
-                ⚒ A faire : Rendre les champs obligatoires avec des feedback
-                messages
-              </h3>
+              <br />{" "}
             </p>
+            <h3 className="wip">
+              ⚒ A faire : Rendre les champs obligatoires avec des feedback
+              messages
+            </h3>
           </Col>
         </Row>
         <br />

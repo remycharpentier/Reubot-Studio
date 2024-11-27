@@ -91,8 +91,9 @@ export default function AboutUs() {
           </p>
           <br />
 
+          <h2>Trombinoscope</h2>
           <h3 className="wip">
-            ⚒ A faire : slider de chaque membre de l'équipe
+            ⚒ A faire : slider des photos de chaque membre de l'équipe
           </h3>
           <br />
 
