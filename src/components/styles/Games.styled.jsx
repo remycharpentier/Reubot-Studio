@@ -51,14 +51,14 @@ export const StyledGames = styled.div`
     background: #000;
     color: #fff;
     padding: 10px 10px 10px 14px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
     transform: translateY(60px);
     opacity: 0;
     transition: all 400ms;
   }
 
   .box:hover::after {
-    transform: translateY(0); /* Corretto da transleteY */
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 200ms;
   }
 `;
