@@ -150,7 +150,8 @@ export default function Contact() {
               <br />
               <br />
               <h3 className="wip">
-                ⚒ A faire : Gérer les cas où il manque les infos au formulaire
+                ⚒ A faire : Rendre les champs obligatoires avec des feedback
+                messages
               </h3>
             </p>
           </Col>

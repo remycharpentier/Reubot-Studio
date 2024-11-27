@@ -26,4 +26,8 @@ export const StyledGlobal = createGlobalStyle`
     .wip::first-letter{
       color: #E1C800 
     }
+    a {
+  color: inherit; 
+  text-decoration: none; 
+}
  }`;

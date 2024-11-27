@@ -19,10 +19,14 @@ export default function Header() {
         <Container>
           <Row>
             <Col className="logo-titre">
-              <a href="#">
+              <a
+                href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={logo} alt="" className="logo-img" />
+                <h1 className="company-name">{companyName}</h1>
               </a>
-              <h1 className="company-name">{companyName}</h1>
               <img src={brush} alt="" className="brush-img" />
             </Col>
             <Col className="nav-bar">
