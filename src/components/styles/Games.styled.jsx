@@ -9,10 +9,18 @@ export const StyledGames = styled.div`
     transition: all 400ms;
     width: auto;
     height: 500px;
+    button {
+      border: none;
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
     img {
       width: 150px;
       height: 500px;
       object-fit: cover;
+      border-radius: 5px;
     }
   }
   .cards-box:hover .box {
@@ -60,5 +68,11 @@ export const StyledGames = styled.div`
     transform: translateY(0);
     opacity: 1;
     transition-delay: 200ms;
+  }
+  .selected-game-img img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 `;

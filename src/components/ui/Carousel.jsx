@@ -10,7 +10,7 @@ export default function Carousel() {
             <Card>
               <Card.Img variant="top" src={item.img} />
               <Card.Body className="card-body">
-                <Card.Title>{item.titre}</Card.Title>
+                <Card.Title>{item.title}</Card.Title>
                 <Card.Text className="card-text">
                   <Row>
                     <Col lg={5} className="test">
