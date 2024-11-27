@@ -14,7 +14,7 @@ export const StyledFooter = styled.div`
   }
   #footer-logo {
     border-radius: 10px;
-    width: 88px;
+    width: 136px;
     margin-top: 5px;
   }
   #footer-company-name {
@@ -22,10 +22,10 @@ export const StyledFooter = styled.div`
   }
   .brush-img {
     position: absolute;
-    top: 115px;
-    left: 167px;
+    top: 111px;
+    left: 120px;
     z-index: -1;
-    width: 300px;
+    width: 350px;
   }
   #div-reseaux img {
     margin-right: 10px;

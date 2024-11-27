@@ -3,16 +3,36 @@ import styled from "styled-components";
 export const StyledHeader = styled.div`
   position: relative;
   z-index: 1;
-  .logo-img {
-    margin-top: 16px;
-    border-radius: 10px;
-    width: 88px;
+  .logo-box {
+    position: relative;
+    a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: fit-content;
+      h1 {
+        position: absolute;
+        bottom: 0px;
+        left: 97px;
+        max-width: fit-content;
+        min-width: max-content;
+      }
+      img {
+        position: absolute;
+        bottom: 8px;
+        right: -178px;
+        margin-top: 16px;
+        border-radius: 10px;
+        width: 169px;
+      }
+    }
   }
   .brush-img {
     width: 500px;
     position: absolute;
-    left: 71px;
-    top: 94px;
+    right: 303px;
+    top: 89px;
     z-index: -1;
   }
   h2 {

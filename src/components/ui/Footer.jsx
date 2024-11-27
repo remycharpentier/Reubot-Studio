@@ -1,5 +1,5 @@
-// IMG
-import logo from "../../assets/img/logo.jpeg";
+// import logo from "../../assets/img/logo.jpeg";
+import logo2 from "../../assets/img/logo2.png";
 import location from "../../assets/img/location_logo.png";
 import linkedin from "../../assets/img/linkedin.png";
 import git from "../../assets/img/git.png";
@@ -7,12 +7,12 @@ import facebook from "../../assets/img/facebook.png";
 import twitter from "../../assets/img/twitter.png";
 import brush from "../../assets/img/brush.png";
 
-// COMP
 import Flag from "./Flag";
-import { StyledFooter } from "../styles/Footer.styled";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import { StyledFooter } from "../styles/Footer.styled";
 
 const companyName = "Reubot Studio";
 
@@ -28,7 +28,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={logo} alt="" id="footer-logo" />
+                <img src={logo2} alt="" id="footer-logo" />
               </a>
               <br />
               <span>
@@ -89,7 +89,7 @@ export default function Footer() {
               </div>
             </Col>
             <Col className="translate">
-              <h3>Translate</h3>
+              <h3>Traduire</h3>
               <Flag></Flag>
             </Col>
           </Row>
