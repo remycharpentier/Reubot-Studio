@@ -23,7 +23,7 @@ export const StyledFooter = styled.div`
   .brush-img {
     position: absolute;
     top: 111px;
-    left: 120px;
+    left: 227px;
     z-index: -1;
     width: 350px;
   }
