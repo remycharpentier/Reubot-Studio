@@ -2,6 +2,7 @@ import { useState } from "react";
 import { StyledGames } from "../../components/styles/Games.styled";
 import games from "../../constants/games";
 import { Col, Row } from "react-bootstrap";
+import SwiperGallery from "../../components/ui/SwiperGallery";
 
 export default function Games() {
   const [selectedGame, setSelectedGame] = useState(null);
@@ -25,13 +26,13 @@ export default function Games() {
               data-text={item.title}
               onClick={() => display(item)}
             >
-              <img src={item.img[0]} alt="" />
+              <img src={item.cover} alt="" />
             </button>
           ))}
         </div>
         <br />
         <br />
-        <p>
+        <div>
           {selectedGame && (
             <>
               <Row className="row-description">
@@ -61,25 +62,21 @@ export default function Games() {
                   <br />
                   <span>{selectedGame.resume}</span>
                 </Col>
-                <Col xs={8} className="description-images">
+                <Col xs={9} className="description-images">
                   <img
-                    src={selectedGame.img[0]}
+                    src={selectedGame.cover}
                     alt=""
                     className="selected-game-cover"
                   />
-                  {selectedGame.img[1] && (
-                    <img
-                      src={selectedGame.img[1]}
-                      alt=""
-                      className="selected-game-footage"
-                    />
-                  )}
+                  <div className="swiper-box">
+                    <SwiperGallery selectedGame={selectedGame} />
+                  </div>
                 </Col>
               </Row>
               <br />
             </>
           )}
-        </p>
+        </div>
       </StyledGames>
     </>
   );

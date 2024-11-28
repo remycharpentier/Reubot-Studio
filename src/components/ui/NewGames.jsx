@@ -8,7 +8,7 @@ export default function NewGames() {
         {games.slice(0, 4).map((item) => (
           <li key={item.id}>
             <Card>
-              <Card.Img variant="top" src={item.img[0]} />
+              <Card.Img variant="top" src={item.cover} />
               <Card.Body className="card-body">
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text className="card-text">

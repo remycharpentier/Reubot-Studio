@@ -97,4 +97,18 @@ export const StyledGames = styled.div`
     object-fit: cover;
     border-radius: 10px;
   }
+  .swiper-box {
+    max-height: 450px;
+    width: 350px;
+    flex: 1;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .mySwiper2 img {
+    object-fit: cover;
+    height: 368px;
+    border-radius: 10px 10px 0 0;
+  }
 `;

@@ -1,5 +1,8 @@
 import coverGame1 from "../assets/img/games/game1/cover.png";
 import footage1Game1 from "../assets/img/games/game1/footage1.jpg";
+import footage2Game1 from "../assets/img/games/game1/footage2.jpg";
+import footage3Game1 from "../assets/img/games/game1/footage3.png";
+import footage4Game1 from "../assets/img/games/game1/footage4.jpg";
 import coverGame2 from "../assets/img/games/game2/cover.png";
 import coverGame3 from "../assets/img/games/game3/cover.jpg";
 import coverGame4 from "../assets/img/games/game4/cover.jpg";
@@ -11,7 +14,8 @@ const games = [
   {
     id: 1,
     title: "Fallout 4",
-    img: [coverGame1, footage1Game1],
+    cover: coverGame1,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "RPG / Action",
     mode: "Solo, Multijoueur",
     support: "PC, PlayStation 4, Xbox One",
@@ -22,7 +26,8 @@ const games = [
   {
     id: 2,
     title: "Monster Hunter: World",
-    img: [coverGame2],
+    cover: coverGame2,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "Action / RPG",
     mode: "Solo, Multijoueur",
     support: "PC, PlayStation 4, Xbox One",
@@ -33,7 +38,8 @@ const games = [
   {
     id: 3,
     title: "Cyberpunk 2077",
-    img: [coverGame3],
+    cover: coverGame3,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "RPG / Action",
     mode: "Solo",
     support: "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S",
@@ -44,7 +50,8 @@ const games = [
   {
     id: 4,
     title: "Baldur's Gate 3",
-    img: [coverGame4],
+    cover: coverGame4,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "RPG",
     mode: "Solo, Multijoueur",
     support: "PC, PlayStation 5",
@@ -55,7 +62,8 @@ const games = [
   {
     id: 5,
     title: "No Man's Sky",
-    img: [coverGame5],
+    cover: coverGame5,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "Exploration / Aventure",
     mode: "Solo, Multijoueur",
     support: "PC, PlayStation 4, Xbox One",
@@ -66,7 +74,8 @@ const games = [
   {
     id: 6,
     title: "Chrono Odyssey",
-    img: [coverGame6],
+    cover: coverGame6,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "Action / RPG",
     mode: "Solo, Multijoueur",
     support: "PC, PlayStation 5, Xbox Series X/S",
@@ -77,7 +86,8 @@ const games = [
   {
     id: 7,
     title: "League of Legends",
-    img: [coverGame7],
+    cover: coverGame7,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "MOBA",
     mode: "Multijoueur",
     support: "PC",
@@ -88,7 +98,8 @@ const games = [
   {
     id: 8,
     title: "State of Decay 2",
-    img: [coverGame8],
+    cover: coverGame8,
+    footage: [footage1Game1, footage2Game1, footage3Game1, footage4Game1],
     genre: "Survie / Action",
     mode: "Solo, Multijoueur",
     support: "PC, Xbox One",
