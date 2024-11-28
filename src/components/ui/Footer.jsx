@@ -1,13 +1,13 @@
 // import logo from "../../assets/img/logo.jpeg";
-import logo2 from "../../assets/img/logo2.png";
-import location from "../../assets/img/location_logo.png";
-import linkedin from "../../assets/img/linkedin.png";
-import git from "../../assets/img/git.png";
-import facebook from "../../assets/img/facebook.png";
-import twitter from "../../assets/img/twitter.png";
-import brush from "../../assets/img/brush.png";
-
+import logo2 from "../../assets/img/logo/logo2.png";
+import location from "../../assets/img/footer/location_logo.png";
+import linkedin from "../../assets/img/footer/linkedin.png";
+import git from "../../assets/img/footer/git.png";
+import facebook from "../../assets/img/footer/facebook.png";
+import twitter from "../../assets/img/footer/twitter.png";
+import brush from "../../assets/img/logo/brush.png";
 import Flag from "./Flag";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

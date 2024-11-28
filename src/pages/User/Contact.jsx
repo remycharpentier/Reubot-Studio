@@ -2,7 +2,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
 import { useState } from "react";
 
-import correct from "../../assets/img/correct.png";
+import correct from "../../assets/img/form/correct.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

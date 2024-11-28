@@ -1,9 +1,9 @@
-import us from "../../assets/img/us.png";
-import fr from "../../assets/img/fr.png";
-import de from "../../assets/img/de.png";
-import es from "../../assets/img/es.png";
-import it from "../../assets/img/it.png";
-import ch from "../../assets/img/ch.png";
+import us from "../../assets/img/footer/us.png";
+import fr from "../../assets/img/footer/fr.png";
+import de from "../../assets/img/footer/de.png";
+import es from "../../assets/img/footer/es.png";
+import it from "../../assets/img/footer/it.png";
+import ch from "../../assets/img/footer/ch.png";
 
 const usFlag = <img src={us} alt="" className="flag" />;
 const frFlag = <img src={fr} alt="" className="flag" />;

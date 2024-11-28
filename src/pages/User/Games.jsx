@@ -15,7 +15,7 @@ export default function Games() {
     <>
       <StyledGames>
         <br />
-        <h1>Page Jeux</h1>
+        <h1>Nos Jeux vidéo</h1>
         <br />
         <div className="cards-box">
           {games.map((item) => (

@@ -7,8 +7,8 @@ import { Form } from "react-bootstrap";
 import { StyledHeader } from "../styles/Header.styled";
 
 // import logo from "../../assets/img/logo.jpeg";
-import brush from "../../assets/img/brush.png";
-import logo2 from "../../assets/img/logo2.png";
+import brush from "../../assets/img/logo/brush.png";
+import logo2 from "../../assets/img/logo/logo2.png";
 
 const companyName = "Reubot Studio";
 
