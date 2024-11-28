@@ -101,14 +101,19 @@ export const StyledGames = styled.div`
     max-height: 450px;
     width: 350px;
     flex: 1;
+    .mySwiper2 img {
+      object-fit: cover;
+      height: 395px;
+      border-radius: 10px 10px 0 0;
+      border: red 1px;
+    }
   }
   .swiper-slide img {
     width: 100%;
-    height: auto;
   }
-  .mySwiper2 img {
+  .swiper-slide img:not(.mySwiper2 img) {
+    width: 100%;
+    height: 55px;
     object-fit: cover;
-    height: 368px;
-    border-radius: 10px 10px 0 0;
   }
 `;
