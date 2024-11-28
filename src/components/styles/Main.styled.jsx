@@ -4,7 +4,7 @@ export const StyledMain = styled.div`
   position: relative;
   min-height: 81vh;
   background: rgba(0, 0, 0, 0.5);
-  background-image: url(/src/assets/img/game13.jpg),
+  background-image: url(/src/assets/img/background/bg1.jpg),
     linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -14,7 +14,7 @@ export const StyledMain = styled.div`
       rgba(0, 0, 0, 0.98) 61%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(/src/assets/img/game14.jpg);
+    url(/src/assets/img/background/bg2.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 139%, 100% 200px, 139%;
   background-position-x: right, center, left;

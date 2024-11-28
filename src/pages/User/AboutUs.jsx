@@ -1,10 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
 // TEST API GOOGLE
 // import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import imgTeam from "../../assets/img/team1.jpg";
-import imgTeam2 from "../../assets/img/team5.jpg";
-import imgStudio from "../../assets/img/studio.jpg";
-import imgLocation from "../../assets/img/location.png";
+import imgTeam from "../../assets/img/company/team1.jpg";
+import imgTeam2 from "../../assets/img/company/team5.jpg";
+import imgStudio from "../../assets/img/company/studio.jpg";
+import imgLocation from "../../assets/img/company/location.png";
+
 import { StyledAboutUs } from "../../components/styles/AboutUs.styled";
 
 // TEST API GOOGLE

@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { StyledCarousel } from "../../components/styles/Carousel.styled";
+import { StyledNewGames } from "../../components/styles/NewGames";
 import { StyledHome } from "../../components/styles/Home.styled";
-import Carousel from "../../components/ui/Carousel";
-import imgTeam from "../../assets/img/team2.png";
+import NewGames from "../../components/ui/NewGames";
+import imgTeam from "../../assets/img/company/team2.png";
 
 export default function Home() {
   return (
@@ -40,9 +40,9 @@ export default function Home() {
         <br />
         <hr />
         <br />
-        <StyledCarousel>
-          <Carousel></Carousel>
-        </StyledCarousel>
+        <StyledNewGames>
+          <NewGames></NewGames>
+        </StyledNewGames>
         <br />
       </StyledHome>
     </>

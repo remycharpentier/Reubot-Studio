@@ -25,7 +25,7 @@ export default function Games() {
               data-text={item.title}
               onClick={() => display(item)}
             >
-              <img src={item.img} alt="" />
+              <img src={item.img[0]} alt="" />
             </button>
           ))}
         </div>
@@ -38,41 +38,42 @@ export default function Games() {
                 <Col className="selected-game-info" xs={3}>
                   <h3>Description</h3>
                   <br />
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                  <div className="flex-space-between">
                     <strong>Titre</strong>
                     <span>{selectedGame.title}</span>
                   </div>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                  <div className="flex-space-between">
                     <strong>Genre</strong>
                     <span>{selectedGame.genre}</span>
                   </div>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                  <div className="flex-space-between">
                     <strong>Mode</strong>
                     <span>{selectedGame.mode}</span>
                   </div>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                  <div className="flex-space-between">
                     <strong>Support</strong>
                     <span>{selectedGame.support}</span>
                   </div>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                  <div className="flex-space-between">
                     <strong>Prix</strong>
                     <span>{selectedGame.price}</span>
                   </div>
                   <br />
                   <span>{selectedGame.resume}</span>
                 </Col>
-                <Col className="selected-game-img" xs={8}>
-                  <img src={selectedGame.img} alt="" />
+                <Col xs={8} className="description-images">
+                  <img
+                    src={selectedGame.img[0]}
+                    alt=""
+                    className="selected-game-cover"
+                  />
+                  {selectedGame.img[1] && (
+                    <img
+                      src={selectedGame.img[1]}
+                      alt=""
+                      className="selected-game-footage"
+                    />
+                  )}
                 </Col>
               </Row>
               <br />
