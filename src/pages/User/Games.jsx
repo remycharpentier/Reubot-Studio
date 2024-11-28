@@ -9,7 +9,7 @@ export default function Games() {
 
   const display = (game) => {
     setSelectedGame(game);
-    console.log(game);
+    // console.log(game);
   };
 
   return (
@@ -31,6 +31,7 @@ export default function Games() {
           ))}
         </div>
         <br />
+        <hr />
         <br />
         <div>
           {selectedGame && (

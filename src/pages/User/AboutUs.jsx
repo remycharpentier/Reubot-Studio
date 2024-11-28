@@ -36,7 +36,10 @@ export default function AboutUs() {
           </p>
           <br />
 
-          <h2>Notre Équipe</h2>
+          <div className="titre-ligne">
+            <h2>Notre Équipe</h2>
+          </div>
+          <br />
           <br />
 
           <img src={imgTeam} alt="" className="team-img" />
@@ -90,14 +93,20 @@ export default function AboutUs() {
             garantir que nos jeux répondent aux attentes des joueurs.
           </p>
           <br />
-
-          <h2>Trombinoscope</h2>
+          <div className="titre-ligne">
+            <h2>Trombinoscope</h2>
+          </div>
+          <br />
+          <br />
           <h3 className="wip">
             ⚒ A faire : slider des photos de chaque membre de l'équipe
           </h3>
           <br />
-
-          <h2>Notre Vision</h2>
+          <br />
+          <div className="titre-ligne">
+            <h2>Notre Vision</h2>
+          </div>
+          <br />
           <p>
             Nous croyons que les jeux vidéo ont le pouvoir de rassembler les
             gens, de raconter des histoires et d'offrir des expériences
@@ -106,13 +115,15 @@ export default function AboutUs() {
             joueurs.
           </p>
           <br />
-
           <p>
             Rejoignez-nous dans cette aventure passionnante et découvrez les
             mondes que nous avons créés pour vous !
           </p>
-
-          <h2>Notre Studio</h2>
+          <br />
+          <div className="titre-ligne">
+            <h2>Notre Studio</h2>
+          </div>
+          <br />
           <p>
             Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
             Bordeaux.
