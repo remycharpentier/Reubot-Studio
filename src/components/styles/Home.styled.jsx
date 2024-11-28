@@ -39,7 +39,8 @@ export const StyledHome = styled.div`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 620px;
+    min-height: 719px;
+    overflow: hidden;
     .h5 {
       text-overflow: ellipsis;
       overflow: hidden;

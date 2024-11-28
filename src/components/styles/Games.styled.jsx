@@ -69,6 +69,14 @@ export const StyledGames = styled.div`
     opacity: 1;
     transition-delay: 200ms;
   }
+  .row-description {
+    max-height: 450px;
+  }
+  .selected-game-info {
+    overflow-y: scroll;
+    max-height: inherit;
+    overflow-y: auto;
+  }
   .selected-game-img img {
     width: 300px;
     height: 450px;

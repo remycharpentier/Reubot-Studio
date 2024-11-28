@@ -5,7 +5,7 @@ export default function Carousel() {
   return (
     <>
       <ul>
-        {games.map((item) => (
+        {games.slice(0, 4).map((item) => (
           <li key={item.id}>
             <Card>
               <Card.Img variant="top" src={item.img} />

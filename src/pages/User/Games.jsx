@@ -16,7 +16,6 @@ export default function Games() {
       <StyledGames>
         <br />
         <h1>Page Jeux</h1>
-        <h3 className="wip">⚒ A faire : liste de jeux et leur description</h3>
         <br />
         <div className="cards-box">
           {games.map((item) => (
@@ -29,19 +28,14 @@ export default function Games() {
               <img src={item.img} alt="" />
             </button>
           ))}
-          {games.map((item) => (
-            <div key={item.id} className="box box-4" data-text={item.title}>
-              <img src={item.img} alt="" />
-            </div>
-          ))}
         </div>
         <br />
         <br />
         <p>
           {selectedGame && (
             <>
-              <Row>
-                <Col className="selected-game-info" xs={4}>
+              <Row className="row-description">
+                <Col className="selected-game-info" xs={3}>
                   <h3>Description</h3>
                   <br />
                   <div

@@ -36,7 +36,6 @@ export default function Home() {
         <br />
         <div className="titre-ligne">
           <h1>Nos derniers jeux vidéo</h1>
-          <h3 className="wip">⚒ A faire : slider pour les jeux</h3>
         </div>
         <br />
         <hr />
