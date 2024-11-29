@@ -1,14 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import font1 from "../../../font/RobotoSlab-VariableFont_wght.ttf";
+import font2 from "../../../font/Iceland-Regular.ttf";
 
 export const StyledGlobal = createGlobalStyle`
 
 @font-face {
   font-family: RobotoSlab;
-  src: url("../../../font/RobotoSlab-VariableFont_wght.ttf");
+  src: url(${font1});
 }
 @font-face {
   font-family: Iceland;
-  src: url("../../../font/Iceland-Regular.ttf");
+  src: url(${font2});
 }
 
   body {
