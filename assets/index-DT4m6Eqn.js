@@ -251,8 +251,8 @@ Error generating stack: `+o.message+`
   }
   .brush-img {
     position: absolute;
-    top: 111px;
-    left: 227px;
+    top: 110px;
+    left: 122px;
     z-index: -1;
     width: 350px;
   }
