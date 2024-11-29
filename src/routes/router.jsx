@@ -12,13 +12,13 @@ const generateRoutes = (Root) => [
     element: <Root />,
     errorElement: <PageError />,
     children: [
-      { path: "/", element: <Navigate to="/home" replace /> }, // Redirection vers /home
+      { path: "/", element: <Navigate to="/home" replace /> },
       { path: "/home", element: <Home /> },
       { path: "/games", element: <Games /> },
       { path: "/news", element: <News /> },
       { path: "/about-us", element: <AboutUs /> },
       { path: "/contact", element: <Contact /> },
-      { path: "*", element: <Navigate to="/home" replace /> }, // Gérer les routes non définies
+      { path: "*", element: <Navigate to="/home" replace /> },
     ],
   },
 ];
