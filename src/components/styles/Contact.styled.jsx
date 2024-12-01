@@ -27,7 +27,7 @@ export const StyledContact = styled.div`
 
   .custom-label input {
     padding: 0.625rem;
-    border: 2px solid #030104;
+    border: 1px solid #030104;
   }
 
   .custom-label label {
@@ -44,7 +44,7 @@ export const StyledContact = styled.div`
   }
 
   textarea {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-color: #030104;
   }
 
