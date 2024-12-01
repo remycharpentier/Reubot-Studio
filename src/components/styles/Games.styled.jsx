@@ -75,6 +75,9 @@ export const StyledGames = styled.div`
     overflow-y: scroll;
     max-height: inherit;
     overflow-y: auto;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 12px;
   }
 
   .selected-game-info::-webkit-scrollbar {

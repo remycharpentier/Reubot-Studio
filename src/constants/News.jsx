@@ -6,7 +6,7 @@ import imgNews4 from "../assets/img/news/news4.png";
 const News = [
   {
     id: 1,
-    title: "Lancement de notre nouveau jeu : Cyberpunk 2077!",
+    title: "Lancement de notre nouveau jeu : Cyberpunk 2077 !",
     date: "1 Décembre 2024",
     img: imgNews1,
     text: "Nous sommes ravis de vous annoncer la sortie de notre dernier projet, Cyberpunk 2077, prévue pour le 16 Mars 2025. Préparez-vous à plonger dans une aventure captivante au cœur de Night City, où des intrigues complexes et des choix moraux vous attendent à chaque coin de rue. Pour célébrer ce lancement, nous vous invitons à découvrir notre bande-annonce et à essayer la démo jouable lors du Bordeaux Game Festival. Restez à l'écoute pour plus de détails à venir !",

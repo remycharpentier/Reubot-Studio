@@ -15,4 +15,8 @@ export const StyledContact = styled.div`
     width: 20px;
     margin-right: 10px;
   }
+  input,
+  textarea {
+    background-color: #dcdcdc;
+  }
 `;

@@ -8,12 +8,14 @@ export default function NewsArticle() {
         {NewsArticles.map((item) => (
           <li key={item.id}>
             <article>
-              <Row>
+              <Row className="row-arcticle">
                 <Col xs={4} md={3}>
                   <img src={item.img} alt="" />
                 </Col>
                 <Col xs={8} md={9}>
-                  <span>Article publié le {item.date}</span>
+                  <span className="published-text">
+                    Article publié le {item.date}
+                  </span>
                   <h2>{item.title}</h2>
                   <p>{item.text}</p>
                 </Col>

@@ -26,6 +26,9 @@ export const StyledHeader = styled.div`
         border-radius: 10px;
         width: 169px;
       }
+      li {
+        font-weight: bolder;
+      }
     }
   }
   .brush-img {
