@@ -1,5 +1,5 @@
 import { Card, Col, Row } from "react-bootstrap";
-import games from "../../constants/games";
+import games from "../../constants/Games";
 
 export default function NewGames() {
   return (

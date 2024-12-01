@@ -1,4 +1,4 @@
-import NewsArticles from "../../constants/news";
+import NewsArticles from "../../constants/News";
 import { Row, Col } from "react-bootstrap";
 
 export default function NewsArticle() {

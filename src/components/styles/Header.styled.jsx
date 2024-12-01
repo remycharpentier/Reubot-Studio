@@ -32,7 +32,7 @@ export const StyledHeader = styled.div`
     width: 500px;
     position: absolute;
     right: 303px;
-    top: 89px;
+    top: 96px;
     z-index: -1;
   }
   h2 {

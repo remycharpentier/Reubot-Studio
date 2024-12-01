@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { StyledGames } from "../../components/styles/Games.styled";
-import games from "../../constants/games";
+import games from "../../constants/Games";
 import { Col, Row } from "react-bootstrap";
 import SwiperGallery from "../../components/ui/SwiperGallery";
 
