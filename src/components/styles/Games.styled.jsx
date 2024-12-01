@@ -76,6 +76,26 @@ export const StyledGames = styled.div`
     max-height: inherit;
     overflow-y: auto;
   }
+
+  .selected-game-info::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .selected-game-info::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+  }
+
+  .selected-game-info::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #d55959;
+  }
+
+  .selected-game-info::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
   .flex-space-between {
     display: flex;
     justify-content: space-between;

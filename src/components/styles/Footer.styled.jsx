@@ -8,10 +8,6 @@ export const StyledFooter = styled.div`
   span {
     font-weight: bold;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
   #footer-logo {
     border-radius: 10px;
     width: 136px;

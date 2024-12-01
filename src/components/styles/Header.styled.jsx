@@ -46,6 +46,7 @@ export const StyledHeader = styled.div`
     align-items: flex-end;
     height: auto;
     width: 300px;
+    padding: 10px 0 14px 0;
   }
 
   .groupe-switch {

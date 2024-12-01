@@ -28,8 +28,13 @@ export const StyledGlobal = createGlobalStyle`
     .wip::first-letter{
       color: #E1C800 
     }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    }
     a {
-  color: inherit; 
-  text-decoration: none; 
-}
+    color: inherit; 
+    text-decoration: none; 
+    }
  }`;

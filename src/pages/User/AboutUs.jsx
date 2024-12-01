@@ -1,5 +1,6 @@
 // TEST API GOOGLE
 // import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+
 import imgTeam from "../../assets/img/company/team1.jpg";
 import imgTeam2 from "../../assets/img/company/team5.jpg";
 import imgStudio from "../../assets/img/company/studio.jpg";

@@ -1,9 +1,14 @@
+import { StyledNews } from "../../components/styles/StyledNews.styled";
+import NewsArticle from "../../components/ui/NewsArticles";
+
 export default function News() {
   return (
     <>
-      <br />
-      <h1>Page Actualités</h1>
-      <h3 className="wip">⚒ A faire : liste de News</h3>
+      <StyledNews>
+        <br />
+        <h1>Nos Actualités</h1>
+        <NewsArticle />
+      </StyledNews>
     </>
   );
 }

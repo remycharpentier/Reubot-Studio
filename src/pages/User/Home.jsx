@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { StyledNewGames } from "../../components/styles/NewGames";
+import { StyledNewGames } from "../../components/styles/NewGames.styled";
 import { StyledHome } from "../../components/styles/Home.styled";
 import NewGames from "../../components/ui/NewGames";
 import imgTeam from "../../assets/img/company/team2.png";
