@@ -8,7 +8,7 @@ export default function NewsArticle() {
         {NewsArticles.map((item) => (
           <li key={item.id}>
             <article>
-              <Row className="row-arcticle">
+              <Row className="row-article">
                 <Col xs={4} md={3}>
                   <img src={item.img} alt="" />
                 </Col>

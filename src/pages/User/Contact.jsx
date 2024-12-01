@@ -54,7 +54,10 @@ export default function Contact() {
         <Row>
           <Col>
             <Form className="form" onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formBasiclastName">
+              <Form.Group
+                className="custom-label"
+                controlId="formBasiclastName"
+              >
                 <Form.Label>Nom</Form.Label>
                 <Form.Control
                   type="text"
@@ -63,7 +66,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicName">
+              <Form.Group className="custom-label" controlId="formBasicName">
                 <Form.Label>Prénom</Form.Label>
                 <Form.Control
                   type="text"
@@ -72,7 +75,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="custom-label" controlId="formBasicEmail">
                 <Form.Label>eMail</Form.Label>
                 <Form.Control
                   type="email"
@@ -81,7 +84,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPhone">
+              <Form.Group className="custom-label" controlId="formBasicPhone">
                 <Form.Label>Téléphone</Form.Label>
                 <Form.Control
                   type="tel"
@@ -90,7 +93,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicMessage">
+              <Form.Group className="custom-label" controlId="formBasicMessage">
                 <Form.Label>Message</Form.Label>
                 <Form.Control
                   as="textarea"
@@ -100,7 +103,6 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <br />
               <Button variant="success" type="submit">
                 Envoyer
               </Button>
