@@ -584,7 +584,7 @@ Error generating stack: `+o.message+`
 
   .custom-label input {
     padding: 0.625rem;
-    border: 2px solid #030104;
+    border: 1px solid #030104;
   }
 
   .custom-label label {
@@ -601,7 +601,7 @@ Error generating stack: `+o.message+`
   }
 
   textarea {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-color: #030104;
   }
 
