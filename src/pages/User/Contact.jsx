@@ -145,7 +145,7 @@ export default function Contact() {
               Dimanche : Indisponible
               <br />
               <br />
-              e--allMail
+              eMail
               <br />
               remycha@msn.com
               <br />
