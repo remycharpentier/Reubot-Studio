@@ -1,6 +1,6 @@
 # Reubot Studio
 
-Reubot Studio est un projet perso e-vitrine en React sur un site de studio de jeux vidéo fictif.
+Reubot Studio est un projet perso e-vitrine en React de studio de développement de jeux vidéo fictif.
 
 ## 1. Utiliser l'application sur le web
 
