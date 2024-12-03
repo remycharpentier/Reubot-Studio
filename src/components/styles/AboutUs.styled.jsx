@@ -14,13 +14,6 @@ export const StyledAboutUs = styled.div`
     margin-right: 50px;
     margin-left: 0;
   }
-  .studio-img {
-    height: 450px;
-    object-fit: cover;
-    width: 100%;
-    margin-bottom: 30px;
-    border-radius: 10px;
-  }
   .titre-ligne {
     text-align: center;
     h2 {
@@ -41,5 +34,16 @@ export const StyledAboutUs = styled.div`
       left: auto;
       right: -120px;
     }
+  }
+  .studio-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .studio-img {
+    height: 350px;
+    object-fit: cover;
+    width: auto;
+    border-radius: 10px;
   }
 `;

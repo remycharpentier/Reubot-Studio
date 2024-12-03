@@ -1,8 +1,10 @@
 // TEST API GOOGLE
 // import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
-import imgTeam from "../../assets/img/company/team1.jpg";
-import imgTeam2 from "../../assets/img/company/team5.jpg";
+// import imgTeam from "../../assets/img/company/team1.jpg";
+// import imgTeam2 from "../../assets/img/company/team5.jpg";
+import imgTeam8 from "../../assets/img/company/team8.jpg";
+import imgTeam9 from "../../assets/img/company/team9.jpg";
 import imgStudio from "../../assets/img/company/studio.jpg";
 import imgLocation from "../../assets/img/company/location.png";
 
@@ -43,7 +45,7 @@ export default function AboutUs() {
           <br />
           <br />
 
-          <img src={imgTeam} alt="" className="team-img" />
+          <img src={imgTeam8} alt="" className="team-img" />
 
           <h3>Les Designers de Jeux</h3>
           <p>
@@ -65,7 +67,7 @@ export default function AboutUs() {
           </p>
           <br />
 
-          <img src={imgTeam2} alt="" className="team-img team-img2" />
+          <img src={imgTeam9} alt="" className="team-img team-img2" />
 
           <h3>Les Artistes</h3>
           <p>
@@ -125,13 +127,20 @@ export default function AboutUs() {
             <h2>Notre Studio</h2>
           </div>
           <br />
-          <p>
-            Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
-            Bordeaux.
-          </p>
-          <img src={imgStudio} alt="" className="studio-img" />
-          <h3 className="wip">⚒ A faire : API Maps de mon adresse</h3>
-          <img src={imgLocation} alt="" className="studio-img" />
+          <div className="studio-container">
+            <div className="studio-info">
+              <p>
+                Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
+                Bordeaux.
+              </p>
+              <p className="wip">⚒ A faire : API Maps de mon adresse</p>
+            </div>
+            <div className="studio-images">
+              <img src={imgStudio} alt="Notre Studio" className="studio-img" />
+              <img src={imgLocation} alt="Location" className="studio-img" />
+            </div>
+          </div>
+          <br />
         </article>
       </StyledAboutUs>
     </>

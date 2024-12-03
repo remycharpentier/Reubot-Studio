@@ -2,7 +2,8 @@
 import { StyledNewGames } from "../../components/styles/NewGames.styled";
 import { StyledHome } from "../../components/styles/Home.styled";
 import NewGames from "../../components/ui/NewGames";
-import imgTeam from "../../assets/img/company/team2.png";
+// import imgTeam from "../../assets/img/company/team2.png";
+import imgTeam13 from "../../assets/img/company/team13.png";
 
 export default function Home() {
   return (
@@ -11,25 +12,23 @@ export default function Home() {
         <br />
         <article>
           <h1>Bienvenue !</h1>
-          <img src={imgTeam} alt="" className="team-img" />
-          <p>
+          <img src={imgTeam13} alt="" className="team-img" />
+          <p className="welcome-text indent">
             Reubot Studio est un studio de création de jeux vidéo basé à
             Bordeaux. Notre équipe passionnée allie créativité et technologie
             pour créer des expériences de jeu uniques et immersives.
-            <br />
-            <br />
+          </p>
+          <p className="welcome-text indent">
             Nous croyons que chaque jeu est une œuvre d'art, et nous nous
             engageons à raconter des histoires captivantes à travers des
             mécaniques de jeu engageantes et des visuels époustouflants.
-            Actuellement, nous développons notre premier titre, un jeu
-            d'aventure narratif qui promet de redéfinir le genre.
-            <br />
-            <br />
+          </p>
+          <p className="welcome-text indent">
             Rejoignez-nous dans cette aventure passionnante et suivez nos
             actualités sur les réseaux sociaux. Ensemble, donnons vie à des
             histoires inoubliables !
-            <br />
-            <br />
+          </p>
+          <p className="welcome-text">
             Reubot Studio – L'imaginaire à portée de main.
           </p>
         </article>
