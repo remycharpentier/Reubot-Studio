@@ -38,7 +38,7 @@ export const StyledContact = styled.div`
     left: 0;
     transform: translate(0.625rem, 0.625rem);
     color: #030104;
-    background-color: #dcdcdc;
+    background-color: #ff9791;
     padding-inline: 0.25rem;
     border: 2px solid transparent;
   }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAboutUs = styled.div`
   .team-img {
-    height: 320px;
+    height: 340px;
     object-fit: cover;
     width: 700px;
     float: right;
