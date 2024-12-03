@@ -235,7 +235,8 @@ Error generating stack: `+o.message+`
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 139%, 100% 200px, 139%, 139%, 100% 200px;
   background-position-x: right, center, left, right, center;
-  background-position-y: 0, 1586px, 1488px, 3142px, 3023px;
+  background-position-y: 0, 42%, 74%, 148%, 87%;
+  /* background-position-y: 0, 1586px, 1488px, 3142px, 3023px; */
   background-blend-mode: multiply;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
