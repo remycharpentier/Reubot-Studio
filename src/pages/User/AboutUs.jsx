@@ -97,6 +97,8 @@ export default function AboutUs() {
           <br />
           <div className="titre-ligne">
             <h2>Trombinoscope</h2>
+            <br />
+            <br />
             <TeamPhotoBoard />
           </div>
           <br />
