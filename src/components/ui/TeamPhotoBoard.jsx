@@ -18,7 +18,7 @@ export default function TeamPhotoBoard() {
                   <Card.Title className="text-center">
                     {member.name} {member.lastName}
                   </Card.Title>
-                  <Card.Text className="text-center">{member.role}</Card.Text>
+                  <h6 className="text-center no-indent">{member.role}</h6>
                   <Card.Text className="text-start">{member.text}</Card.Text>
                 </Card.Body>
               </Card>

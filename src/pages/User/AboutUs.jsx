@@ -101,11 +101,6 @@ export default function AboutUs() {
           </div>
           <br />
           <br />
-          <h3 className="wip">
-            ⚒ A faire : slider des photos de chaque membre de l'équipe
-          </h3>
-          <br />
-          <br />
           <div className="titre-ligne">
             <h2>Notre Vision</h2>
           </div>
