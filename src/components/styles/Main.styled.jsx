@@ -29,7 +29,8 @@ export const StyledMain = styled.div`
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 139%, 100% 200px, 139%, 139%, 100% 200px;
   background-position-x: right, center, left, right, center;
-  background-position-y: 0, 1586px, 1488px, 3142px, 3023px;
+  /* background-position-y: 0, 1586px, 1488px, 3142px, 3023px; */
+  background-position-y: 0, 150vh, 162vh, 323vh, 311vh;
   background-blend-mode: multiply;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
