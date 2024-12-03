@@ -115,12 +115,8 @@ export default function AboutUs() {
             gens, de raconter des histoires et d'offrir des expériences
             inoubliables. Notre mission est de créer des jeux qui inspirent,
             divertissent et laissent une empreinte durable dans l'esprit des
-            joueurs.
-          </p>
-          <br />
-          <p>
-            Rejoignez-nous dans cette aventure passionnante et découvrez les
-            mondes que nous avons créés pour vous !
+            joueurs. Rejoignez-nous dans cette aventure passionnante et
+            découvrez les mondes que nous avons créés pour vous !
           </p>
           <br />
           <div className="titre-ligne">
@@ -128,13 +124,12 @@ export default function AboutUs() {
           </div>
           <br />
           <div className="studio-container">
-            <div className="studio-info">
-              <p>
-                Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
-                Bordeaux.
-              </p>
-              <p className="wip">⚒ A faire : API Maps de mon adresse</p>
-            </div>
+            <span>
+              Notre Studio se situe au coeur de Bordeaux. 45 Rue Thiac 33000
+              Bordeaux.
+            </span>
+            <br />
+            <br />
             <div className="studio-images">
               <img src={imgStudio} alt="Notre Studio" className="studio-img" />
               <img src={imgLocation} alt="Location" className="studio-img" />

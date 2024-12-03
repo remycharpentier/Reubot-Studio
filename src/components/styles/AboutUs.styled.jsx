@@ -46,4 +46,8 @@ export const StyledAboutUs = styled.div`
     width: auto;
     border-radius: 10px;
   }
+  p {
+    margin: 1em 0;
+    text-indent: 20px;
+  }
 `;
