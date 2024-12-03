@@ -7,6 +7,7 @@ import imgStudio from "../../assets/img/company/studio.jpg";
 import imgLocation from "../../assets/img/company/location.png";
 
 import { StyledAboutUs } from "../../components/styles/AboutUs.styled";
+import TeamPhotoBoard from "../../components/ui/TeamPhotoBoard";
 
 // TEST API GOOGLE
 // require("dotenv").config();
@@ -96,6 +97,7 @@ export default function AboutUs() {
           <br />
           <div className="titre-ligne">
             <h2>Trombinoscope</h2>
+            <TeamPhotoBoard />
           </div>
           <br />
           <br />
