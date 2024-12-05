@@ -21,11 +21,8 @@ export default function Footer() {
       <Container>
         <Row id="row-footer">
           <Col>
-            <a
-              href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            {/* Contenu de la première colonne */}
+            <a href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor">
               <img src={logo2} alt="Logo de l'entreprise" id="footer-logo" />
             </a>
             <br />
@@ -33,8 +30,6 @@ export default function Footer() {
               <div className="company-text">
                 <a
                   href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="company-name"
                   id="footer-company-name"
                 >
@@ -46,55 +41,42 @@ export default function Footer() {
               <img src={brush} alt="Pinceau" className="brush-img" />
             </div>
             <br />
+            <hr className="footer-divider" />
           </Col>
           <Col className="adresse">
+            {/* Contenu de la deuxième colonne */}
             <h3>Adresse</h3>
-            <a
-              href="https://www.google.fr/maps/place/45+Rue+Thiac,+33000+Bordeaux/@44.8437562,-0.58706,16z/data=!3m1!4b1!4m6!3m5!1s0xd5527e7258f8609:0x6f2ebbf2e4ca2a2a!8m2!3d44.8437524!4d-0.5844851!16s%2Fg%2F11c0zpx9tj?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.google.fr/maps/place/45+Rue+Thiac,+33000+Bordeaux/@44.8437562,-0.58706,16z/data=!3m1!4b1!4m6!3m5!1s0xd5527e7258f8609:0x6f2ebbf2e4ca2a2a!8m2!3d44.8437524!4d-0.5844851!16s%2Fg%2F11c0zpx9tj?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
               <img src={location} alt="Localisation" />
             </a>
             <br />
             <span id="adresse-texte">45 rue Thiac, 33000 Bordeaux</span>
+            <hr className="footer-divider" />
           </Col>
           <Col>
+            {/* Contenu de la troisième colonne */}
             <h3>Réseaux sociaux</h3>
             <div id="div-reseaux">
-              <a
-                href="https://www.linkedin.com/in/rémy-charpentier-a0ba4717a"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.linkedin.com/in/rémy-charpentier-a0ba4717a">
                 <img src={linkedin} alt="LinkedIn" />
               </a>
-              <a
-                href="https://github.com/remycharpentier"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/remycharpentier">
                 <img src={git} alt="GitHub" />
               </a>
-              <a
-                href="https://www.facebook.com/reubot.boy/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.facebook.com/reubot.boy/">
                 <img src={facebook} alt="Facebook" />
               </a>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://twitter.com/">
                 <img src={twitter} alt="Twitter" />
               </a>
             </div>
+            <hr className="footer-divider" />
           </Col>
           <Col className="translate">
+            {/* Contenu de la quatrième colonne */}
             <h3>Traduire</h3>
             <Flag />
+            <hr className="footer-divider" />
           </Col>
         </Row>
         <hr />

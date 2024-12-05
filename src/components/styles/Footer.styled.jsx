@@ -41,10 +41,10 @@ export const StyledFooter = styled.div`
 
   .brush-img {
     position: absolute;
-    top: -62px;
-    left: -105px;
+    top: -52px;
+    left: -53px;
     z-index: -1;
-    width: 410px;
+    width: 290px;
   }
 
   #div-reseaux img {
@@ -65,5 +65,44 @@ export const StyledFooter = styled.div`
   .flag {
     width: 50px;
     margin-right: 3px;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  /*Responsive*/
+
+  @media (max-width: 1400px) {
+    #row-footer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #row-footer > div {
+      flex: 0 0 50%;
+      box-sizing: border-box;
+    }
+    .footer-divider {
+      display: block;
+      margin: 10px 0;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #row-footer > div {
+      flex: 0 0 100%;
+    }
+
+    .footer-divider {
+      display: block;
+      margin: 10px 0;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
   }
 `;
