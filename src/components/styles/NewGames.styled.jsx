@@ -26,7 +26,7 @@ export const StyledNewGames = styled.div`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 719px;
+    min-height: 672px;
     overflow: hidden;
     img {
       max-height: 400px;
