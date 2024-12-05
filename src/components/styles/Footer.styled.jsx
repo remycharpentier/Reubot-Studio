@@ -21,7 +21,7 @@ export const StyledFooter = styled.div`
     top: 10.5vh;
     left: 18vh;
     z-index: -1;
-    width: 350px;
+    width: 400px;
   }
   #div-reseaux img {
     margin-right: 10px;
