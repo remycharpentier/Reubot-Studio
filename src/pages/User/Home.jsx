@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { StyledNewGames } from "../../components/styles/NewGames.styled";
 import { StyledHome } from "../../components/styles/Home.styled";
 import NewGames from "../../components/ui/NewGames";
 // import imgTeam from "../../assets/img/company/team2.png";
@@ -39,9 +38,7 @@ export default function Home() {
         <br />
         <hr />
         <br />
-        <StyledNewGames>
-          <NewGames></NewGames>
-        </StyledNewGames>
+        <NewGames></NewGames>
         <br />
       </StyledHome>
     </>

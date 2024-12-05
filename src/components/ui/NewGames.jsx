@@ -1,12 +1,13 @@
 import { Card, Col, Row } from "react-bootstrap";
 import games from "../../constants/Games";
+import { StyledNewGames } from "../styles/NewGames.styled";
 
 export default function NewGames() {
   return (
-    <>
-      <ul>
+    <StyledNewGames>
+      <div className="game-list">
         {games.slice(0, 4).map((item) => (
-          <li key={item.id}>
+          <div key={item.id} className="game-item">
             <Card>
               <Card.Img variant="top" src={item.cover} />
               <Card.Body className="card-body">
@@ -34,9 +35,9 @@ export default function NewGames() {
                 <span className="price">{item.price}€</span>
               </Card.Body>
             </Card>
-          </li>
+          </div>
         ))}
-      </ul>
-    </>
+      </div>
+    </StyledNewGames>
   );
 }
