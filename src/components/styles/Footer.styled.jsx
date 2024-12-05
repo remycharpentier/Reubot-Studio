@@ -18,10 +18,10 @@ export const StyledFooter = styled.div`
   }
   .brush-img {
     position: absolute;
-    top: 110px;
-    left: 122px;
+    top: 10.5vh;
+    left: 18vh;
     z-index: -1;
-    width: 350px;
+    width: 400px;
   }
   #div-reseaux img {
     margin-right: 10px;
