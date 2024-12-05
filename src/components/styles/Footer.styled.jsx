@@ -16,6 +16,7 @@ export const StyledFooter = styled.div`
     border-radius: 10px;
     width: 167px;
     margin-top: 5px;
+    filter: drop-shadow(-3px 5px 0px #f6c9a8);
   }
 
   .company-text {

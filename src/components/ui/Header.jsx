@@ -20,18 +20,12 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={logo2} alt="Logo" />
+              <img src={logo2} alt="Logo" className="logo-img" />
               <h1 className="company-name">{companyName}</h1>
             </a>
             <img src={brush} alt="Brush" className="brush-img" />
           </Col>
           <Col className="nav-bar">
-            <span className="wip">
-              <strong>
-                ⚒ À faire : le responsive, les fonctionnalités admin &
-                changement de thème
-              </strong>
-            </span>
             <Form>
               <Form.Group
                 controlId="admin-mode"

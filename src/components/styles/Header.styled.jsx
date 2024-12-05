@@ -8,36 +8,33 @@ export const StyledHeader = styled.div`
     position: relative;
 
     a {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: fit-content;
+      position: relative;
+      display: inline-block;
+      z-index: 2;
 
       h1 {
-        position: absolute;
-        bottom: 0;
-        left: 97px;
-        min-width: max-content;
-      }
-
-      img {
-        position: absolute;
-        bottom: 8px;
-        right: -178px;
-        margin-top: 16px;
-        border-radius: 10px;
-        width: 169px;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        top: 41px;
+        right: 100px;
       }
     }
+  }
+  .logo-img {
+    position: relative;
+    z-index: 2;
+    top: 9px;
+    position: relative;
+    filter: drop-shadow(-3px 5px 0px #f6c9a8);
   }
 
   .brush-img {
     width: 500px;
     position: absolute;
-    right: 303px;
-    top: 96px;
-    z-index: -1;
+    top: 71px;
+    left: -106px;
+    z-index: 1;
   }
 
   .nav-bar {
@@ -79,5 +76,21 @@ export const StyledHeader = styled.div`
   }
   .form-switch {
     padding-left: 0;
+  }
+
+  // Responsive
+  @media (max-width: 1400px) {
+    .brush-img {
+      right: 300px;
+    }
+  }
+  @media (max-width: 992px) {
+    .brush-img {
+      right: 300px;
+    }
+    h1 {
+      bottom: 50px;
+      left: 100px;
+    }
   }
 `;
