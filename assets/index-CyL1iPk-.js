@@ -208,7 +208,7 @@ Error generating stack: `+o.message+`
   .form-switch {
     padding: 0;
   }
-`,sv="/Reubot-Studio/assets/brush-BkI5312_.png",lv="/Reubot-Studio/assets/logo2-BZUt5rlr.png",TS="Reubot Studio";function bS(){return h.jsx(h.Fragment,{children:h.jsx(CS,{children:h.jsx(Cl,{children:h.jsxs(qt,{children:[h.jsxs(_e,{className:"logo-box",children:[h.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[h.jsx("img",{src:lv,alt:""}),h.jsx("h1",{className:"company-name",children:TS})]}),h.jsx("img",{src:sv,alt:"",className:"brush-img"})]}),h.jsxs(_e,{className:"nav-bar",children:[h.jsx("span",{className:"wip",children:h.jsx("strong",{children:"⚒ A faire : les features admin & changement de thème"})}),h.jsx(ye,{children:h.jsxs(ye.Group,{controlId:"custom-switch",className:"groupe-switch admin",children:[h.jsx(ye.Label,{className:"me-2",children:"Mode admin"}),h.jsx(ye.Check,{type:"switch",id:"custom-switch"})]})}),h.jsx(ye,{children:h.jsxs(ye.Group,{controlId:"custom-switch",className:"groupe-switch",children:[h.jsx(ye.Label,{className:"me-2",children:"Mode clair / sombre"}),h.jsx(ye.Check,{type:"switch",id:"custom-switch"})]})}),h.jsx(nS,{})]})]})})})})}const $f="/Reubot-Studio/assets/bg1-BYaIaQbw.jpg",jS="/Reubot-Studio/assets/bg2-DH0Vz1VB.jpg",PS=ct.div`
+`,sv="/Reubot-Studio/assets/brush-BkI5312_.png",lv="/Reubot-Studio/assets/logo2-BZUt5rlr.png",TS="Reubot Studio";function bS(){return h.jsx(h.Fragment,{children:h.jsx(CS,{children:h.jsx(Cl,{children:h.jsxs(qt,{children:[h.jsxs(_e,{className:"logo-box",children:[h.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[h.jsx("img",{src:lv,alt:""}),h.jsx("h1",{className:"company-name",children:TS})]}),h.jsx("img",{src:sv,alt:"",className:"brush-img"})]}),h.jsxs(_e,{className:"nav-bar",children:[h.jsx("span",{className:"wip",children:h.jsx("strong",{children:"⚒ A faire : le responsive, les features admin & changement de thème"})}),h.jsx(ye,{children:h.jsxs(ye.Group,{controlId:"custom-switch",className:"groupe-switch admin",children:[h.jsx(ye.Label,{className:"me-2",children:"Mode admin"}),h.jsx(ye.Check,{type:"switch",id:"custom-switch"})]})}),h.jsx(ye,{children:h.jsxs(ye.Group,{controlId:"custom-switch",className:"groupe-switch",children:[h.jsx(ye.Label,{className:"me-2",children:"Mode clair / sombre"}),h.jsx(ye.Check,{type:"switch",id:"custom-switch"})]})}),h.jsx(nS,{})]})]})})})})}const $f="/Reubot-Studio/assets/bg1-BYaIaQbw.jpg",jS="/Reubot-Studio/assets/bg2-DH0Vz1VB.jpg",PS=ct.div`
   position: relative;
   min-height: 81vh;
   background: rgba(0, 0, 0, 0.5);
@@ -235,7 +235,6 @@ Error generating stack: `+o.message+`
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 139%, 100% 200px, 139%, 139%, 100% 200px;
   background-position-x: right, center, left, right, center;
-  /* background-position-y: 0, 42%, 74%, 148%, 87%; */
   /* background-position-y: 0, 1586px, 1488px, 3142px, 3023px; */
   background-position-y: 0, 150vh, 162vh, 323vh, 311vh;
   background-blend-mode: multiply;
@@ -264,10 +263,10 @@ Error generating stack: `+o.message+`
   }
   .brush-img {
     position: absolute;
-    top: 110px;
-    left: 122px;
+    top: 10.5vh;
+    left: 18vh;
     z-index: -1;
-    width: 350px;
+    width: 400px;
   }
   #div-reseaux img {
     margin-right: 10px;
