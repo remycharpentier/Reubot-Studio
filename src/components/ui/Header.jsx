@@ -32,7 +32,8 @@ export default function Header() {
             <Col className="nav-bar">
               <span className="wip">
                 <strong>
-                  ⚒ A faire : les features admin & changement de thème
+                  ⚒ A faire : le responsive, les features admin & changement de
+                  thème
                 </strong>
               </span>
               <Form>
