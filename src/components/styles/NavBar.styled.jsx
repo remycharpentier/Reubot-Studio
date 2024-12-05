@@ -30,7 +30,7 @@ export const StyledNavBar = styled.div`
     font-weight: bolder;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .burger {
       display: block;
     }

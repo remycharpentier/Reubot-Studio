@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import bg1 from "../../assets/img/background/bg1.jpg";
 import bg2 from "../../assets/img/background/bg2.jpg";
+import bg3 from "../../assets/img/background/bg3.png";
+import bg4 from "../../assets/img/background/bg4.png";
 
 export const StyledMain = styled.div`
   position: relative;
   min-height: 81vh;
   background: rgba(0, 0, 0, 0.5);
+  /*
   background-image: url(${bg1}),
     linear-gradient(
       to bottom,
@@ -29,8 +32,12 @@ export const StyledMain = styled.div`
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 139%, 100% 200px, 139%, 139%, 100% 200px;
   background-position-x: right, center, left, right, center;
-  /* background-position-y: 0, 1586px, 1488px, 3142px, 3023px; */
   background-position-y: 0, 150vh, 162vh, 323vh, 311vh;
+  background-blend-mode: multiply;
+  */
+  background-image: url(${bg4});
+  background-position-x: right;
+  background-size: 139%;
   background-blend-mode: multiply;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;

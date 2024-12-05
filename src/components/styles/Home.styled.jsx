@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const StyledHome = styled.div`
   .team-img {
-    height: 287px;
-    object-fit: cover;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 280px;
     float: right;
     shape-outside: content-box;
     border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
   }
   .welcome-text {
-    display: -webkit-box;
+    display: flex;
     padding-right: 40px;
   }
   .indent {

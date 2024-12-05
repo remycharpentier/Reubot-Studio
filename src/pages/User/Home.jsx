@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { StyledHome } from "../../components/styles/Home.styled";
 import NewGames from "../../components/ui/NewGames";
-// import imgTeam from "../../assets/img/company/team2.png";
 import imgTeam13 from "../../assets/img/company/team13.png";
 
 export default function Home() {
@@ -38,7 +37,7 @@ export default function Home() {
         <br />
         <hr />
         <br />
-        <NewGames></NewGames>
+        <NewGames />
         <br />
       </StyledHome>
     </>
