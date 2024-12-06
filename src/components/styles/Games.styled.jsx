@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const StyledGames = styled.div`
   .cards-box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
     gap: 1rem;
-    transition: all 400ms;
-    width: auto;
+    padding: 1rem;
+    max-width: 100%;
     height: 500px;
+    scroll-snap-type: x mandatory;
     button {
+      scroll-snap-align: start;
       border: none;
       outline: none;
       background: transparent;
@@ -22,6 +24,33 @@ export const StyledGames = styled.div`
       object-fit: cover;
       border-radius: 5px;
     }
+  }
+  .relative-container {
+    margin-top: 40px;
+    position: relative;
+  }
+  .scroll-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50px;
+    font-size: 2rem;
+  }
+  .scroll-left {
+    left: 0;
+  }
+  .scroll-right {
+    right: 0;
+  }
+  .scroll-button i {
+    font-size: 2rem;
   }
   .cards-box:hover .box {
     filter: grayscale(100%) opacity(24%);

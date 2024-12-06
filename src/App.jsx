@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { RouterProvider } from "react-router-dom";
 import { StyledBody } from "./components/styles/Body.styled";
 import { StyledGlobal } from "./components/styles/Global.styled";

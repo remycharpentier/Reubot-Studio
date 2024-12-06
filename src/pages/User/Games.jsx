@@ -4,30 +4,51 @@ import games from "../../constants/Games";
 import { Col, Row } from "react-bootstrap";
 import SwiperGallery from "../../components/ui/SwiperGallery";
 
+import { useRef } from "react";
+
 export default function Games() {
   const [selectedGame, setSelectedGame] = useState(null);
+  const cardsRef = useRef(null); // Référence pour le conteneur des cartes
 
   const display = (game) => {
     setSelectedGame(game);
-    // console.log(game);
+  };
+
+  const scrollLeft = () => {
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({ left: -200, behavior: "smooth" }); // Ajustez la valeur selon vos besoins
+    }
+  };
+
+  const scrollRight = () => {
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({ left: 200, behavior: "smooth" }); // Ajustez la valeur selon vos besoins
+    }
   };
 
   return (
     <>
       <StyledGames>
         <h1>Nos Jeux vidéo</h1>
-        <br />
-        <div className="cards-box">
-          {games.map((item) => (
-            <button
-              key={item.id}
-              className="box box-4"
-              data-text={item.title}
-              onClick={() => display(item)}
-            >
-              <img src={item.cover} alt="" />
-            </button>
-          ))}
+        <div className="relative-container">
+          <button className="scroll-button scroll-left">
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <div className="cards-box" ref={cardsRef}>
+            {games.map((item) => (
+              <button
+                key={item.id}
+                className="box box-4"
+                data-text={item.title}
+                onClick={() => display(item)}
+              >
+                <img src={item.cover} alt="" />
+              </button>
+            ))}
+          </div>
+          <button className="scroll-button scroll-right">
+            <i className="fas fa-chevron-right"></i>
+          </button>
         </div>
         <br />
         <hr />
