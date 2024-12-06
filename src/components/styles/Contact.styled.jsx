@@ -38,7 +38,6 @@ export const StyledContact = styled.div`
     left: 0;
     transform: translate(0.625rem, 0.625rem);
     color: #030104;
-    /* background-color: #ff9791; */
     background: rgb(242, 221, 177);
     background: linear-gradient(
       90deg,

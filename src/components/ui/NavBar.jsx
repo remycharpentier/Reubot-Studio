@@ -19,9 +19,6 @@ export default function NavBar() {
 
   return (
     <StyledNavBar>
-      <div className="burger" onClick={toggleMenu}>
-        &#9776; {/* Symbole burger */}
-      </div>
       <ul className={isOpen ? "open" : ""}>
         {navItems.map((item) => (
           <li key={item.id}>
@@ -31,6 +28,9 @@ export default function NavBar() {
           </li>
         ))}
       </ul>
+      <div className="burger" onClick={toggleMenu}>
+        &#9776; {/* Symbole burger */}
+      </div>
     </StyledNavBar>
   );
 }

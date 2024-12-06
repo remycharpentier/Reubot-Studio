@@ -41,15 +41,14 @@ export const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 10px 0 14px;
-    width: 300px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
   }
 
   .groupe-switch {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 6px 15px;
     border-radius: 10px;
     font-weight: bolder;
     width: 100%;

@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const StyledNavBar = styled.div`
   position: relative;
+  display: flex;
+  justify-content: space-between;
 
   .burger {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    margin-left: auto;
   }
 
   ul {
