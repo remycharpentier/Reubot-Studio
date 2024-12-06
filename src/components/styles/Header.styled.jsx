@@ -6,12 +6,10 @@ export const StyledHeader = styled.div`
 
   .logo-box {
     position: relative;
-
     a {
       position: relative;
       display: inline-block;
       z-index: 2;
-
       h1 {
         position: relative;
         z-index: 2;
@@ -78,18 +76,33 @@ export const StyledHeader = styled.div`
   }
 
   // Responsive
-  @media (max-width: 1400px) {
-    .brush-img {
-      right: 300px;
-    }
-  }
   @media (max-width: 992px) {
-    .brush-img {
-      right: 300px;
+    .row {
+      margin-top: 20px;
     }
-    h1 {
-      bottom: 50px;
-      left: 100px;
+    .logo-box {
+      position: relative;
+      a {
+        position: absolute;
+        display: inline-block;
+        z-index: 2;
+        bottom: 0px;
+        h1 {
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          top: 0px;
+          right: -110px;
+        }
+      }
+    }
+    .logo-img {
+      top: 60px;
+      width: 200px;
+    }
+    .brush-img {
+      left: -137px;
+      top: 55px;
     }
   }
 `;

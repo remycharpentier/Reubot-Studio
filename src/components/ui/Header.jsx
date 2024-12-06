@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Container>
-        <Row>
+        <Row className="row">
           <Col className="logo-box">
             <a
               href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
