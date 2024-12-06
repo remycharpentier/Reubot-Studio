@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { StyledHome } from "../../components/styles/Home.styled";
-import NewGames from "../../components/ui/NewGames";
+import LatestGames from "../../components/ui/LatestGames";
 import imgTeam13 from "../../assets/img/company/team13.png";
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
       <div className="titre-ligne">
         <h1>Nos derniers jeux vidéo</h1>
       </div>
-      <NewGames />
+      <LatestGames />
     </StyledHome>
   );
 }

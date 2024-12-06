@@ -15,7 +15,6 @@ export default function Games() {
   return (
     <>
       <StyledGames>
-        <br />
         <h1>Nos Jeux vidéo</h1>
         <br />
         <div className="cards-box">
@@ -74,7 +73,6 @@ export default function Games() {
                   </div>
                 </Col>
               </Row>
-              <br />
             </>
           )}
         </div>

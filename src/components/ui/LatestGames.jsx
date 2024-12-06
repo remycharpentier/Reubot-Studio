@@ -1,10 +1,10 @@
 import { Card, Col, Row } from "react-bootstrap";
 import games from "../../constants/Games";
-import { StyledNewGames } from "../styles/NewGames.styled";
+import { StyledLatestGames } from "../styles/LatestGames.styled";
 
-export default function NewGames() {
+export default function LatestGames() {
   return (
-    <StyledNewGames>
+    <StyledLatestGames>
       <div className="game-list">
         {games.slice(0, 4).map((item) => (
           <div key={item.id} className="game-item">
@@ -44,6 +44,6 @@ export default function NewGames() {
           </div>
         ))}
       </div>
-    </StyledNewGames>
+    </StyledLatestGames>
   );
 }

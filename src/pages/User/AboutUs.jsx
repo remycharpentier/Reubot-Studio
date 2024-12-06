@@ -27,7 +27,6 @@ export default function AboutUs() {
     <>
       <StyledAboutUs>
         <article>
-          <br />
           <h1>Présentation de notre équipe du Studio</h1>
           <p>
             Bienvenue dans notre studio de développement de jeux vidéo situé à
@@ -132,7 +131,6 @@ export default function AboutUs() {
               <img src={imgLocation} alt="Location" className="studio-img" />
             </div>
           </div>
-          <br />
         </article>
       </StyledAboutUs>
     </>

@@ -49,7 +49,6 @@ export default function Contact() {
   return (
     <>
       <StyledContact>
-        <br />
         <h1>Nous contacter</h1>
         <Row>
           <Col>
@@ -157,7 +156,6 @@ export default function Contact() {
             </h3>
           </Col>
         </Row>
-        <br />
       </StyledContact>
     </>
   );

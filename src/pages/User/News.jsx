@@ -5,7 +5,6 @@ export default function News() {
   return (
     <>
       <StyledNews>
-        <br />
         <h1>Nos Actualités</h1>
         <NewsArticle />
       </StyledNews>

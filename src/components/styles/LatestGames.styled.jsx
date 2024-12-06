@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledNewGames = styled.div`
+export const StyledLatestGames = styled.div`
   .game-list {
     display: flex;
     flex-wrap: wrap;

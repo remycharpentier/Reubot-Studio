@@ -14,6 +14,6 @@ export const StyledMain = styled.div`
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 0 2px 10px #000;
   #main-container {
-    padding: 16px 12px;
+    padding-block: 50px;
   }
 `;
