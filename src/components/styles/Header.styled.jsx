@@ -105,7 +105,7 @@ export const StyledHeader = styled.div`
     }
     .brush-img {
       left: -137px;
-      top: 36px;
+      top: 60px;
     }
     .dropdown-menu-responsive {
       display: block;

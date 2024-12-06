@@ -37,6 +37,10 @@ export const StyledNavBar = styled.div`
     .burger {
       display: block;
     }
+    .dropdown-menu-responsive {
+      font-size: xx-large;
+      padding-left: 30px;
+    }
 
     ul {
       flex-direction: column;
