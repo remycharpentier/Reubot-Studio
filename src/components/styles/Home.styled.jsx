@@ -7,13 +7,12 @@ export const StyledHome = styled.div`
     height: auto;
     max-height: 280px;
     float: right;
-    shape-outside: content-box;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 20px;
+    margin-left: 30px;
   }
   .welcome-text {
-    display: flex;
     padding-right: 40px;
   }
   .indent {
@@ -24,19 +23,21 @@ export const StyledHome = styled.div`
     h1 {
       position: relative;
       display: inline-block;
+      margin: 20px 0;
     }
     h1::before,
     h1::after {
-      content: " ";
+      content: "";
       display: block;
       position: absolute;
       top: 50%;
-      left: -120px;
       width: 100px;
       border-bottom: 1px solid #fff;
     }
+    h1::before {
+      left: -120px;
+    }
     h1::after {
-      left: auto;
       right: -120px;
     }
   }

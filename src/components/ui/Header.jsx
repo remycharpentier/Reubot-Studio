@@ -1,8 +1,5 @@
 import NavBar from "./NavBar";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Form } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { StyledHeader } from "../styles/Header.styled";
 import brush from "../../assets/img/logo/brush.png";
 import logo2 from "../../assets/img/logo/logo2.png";
@@ -27,10 +24,7 @@ export default function Header() {
           </Col>
           <Col className="nav-bar">
             <Form>
-              <Form.Group
-                controlId="admin-mode"
-                className="groupe-switch admin"
-              >
+              <Form.Group controlId="admin-mode" className="groupe-switch">
                 <Form.Label className="me-2">Mode admin</Form.Label>
                 <Form.Check type="switch" />
               </Form.Group>
