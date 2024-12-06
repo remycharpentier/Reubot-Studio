@@ -10,6 +10,7 @@ export const StyledHeader = styled.div`
       position: relative;
       display: inline-block;
       z-index: 2;
+      top: 8px;
       h1 {
         position: relative;
         z-index: 2;
@@ -30,9 +31,9 @@ export const StyledHeader = styled.div`
   .brush-img {
     width: 500px;
     position: absolute;
-    top: 71px;
+    top: 79px;
     left: -106px;
-    z-index: 1;
+    z-index: -1;
   }
 
   .nav-bar {
@@ -89,7 +90,7 @@ export const StyledHeader = styled.div`
         position: absolute;
         display: inline-block;
         z-index: 2;
-        bottom: 0px;
+        top: -58px;
         h1 {
           position: relative;
           z-index: 2;
@@ -105,7 +106,7 @@ export const StyledHeader = styled.div`
     }
     .brush-img {
       left: -137px;
-      top: 60px;
+      top: 52px;
     }
     .dropdown-menu-responsive {
       display: block;

@@ -29,7 +29,7 @@ export default function Header() {
                 <Form.Check type="switch" />
               </Form.Group>
               <Form.Group controlId="theme-mode" className="groupe-switch">
-                <Form.Label className="me-2">Mode clair / sombre</Form.Label>
+                <Form.Label className="me-2">Light / Dark</Form.Label>
                 <Form.Check type="switch" />
               </Form.Group>
             </Form>
