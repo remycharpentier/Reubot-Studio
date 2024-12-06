@@ -168,6 +168,7 @@ Error generating stack: `+o.message+`
       position: relative;
       display: inline-block;
       z-index: 2;
+      top: 8px;
       h1 {
         position: relative;
         z-index: 2;
@@ -188,9 +189,9 @@ Error generating stack: `+o.message+`
   .brush-img {
     width: 500px;
     position: absolute;
-    top: 71px;
+    top: 79px;
     left: -106px;
-    z-index: 1;
+    z-index: -1;
   }
 
   .nav-bar {
@@ -247,7 +248,7 @@ Error generating stack: `+o.message+`
         position: absolute;
         display: inline-block;
         z-index: 2;
-        bottom: 0px;
+        top: -58px;
         h1 {
           position: relative;
           z-index: 2;
@@ -263,7 +264,7 @@ Error generating stack: `+o.message+`
     }
     .brush-img {
       left: -137px;
-      top: 60px;
+      top: 52px;
     }
     .dropdown-menu-responsive {
       display: block;
@@ -280,7 +281,7 @@ Error generating stack: `+o.message+`
       display: none;
     }
   }
-`,vy="/Reubot-Studio/assets/brush-BkI5312_.png",gy="/Reubot-Studio/assets/logo2-BZUt5rlr.png",DT="Reubot Studio";function IT(){return v.jsx(LT,{children:v.jsx(fl,{children:v.jsxs(an,{className:"row",children:[v.jsxs(Le,{className:"logo-box",children:[v.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[v.jsx("img",{src:gy,alt:"Logo",className:"logo-img"}),v.jsx("h1",{className:"company-name",children:DT})]}),v.jsx("img",{src:vy,alt:"Brush",className:"brush-img"})]}),v.jsxs(Le,{className:"nav-bar",children:[v.jsxs(Te,{children:[v.jsxs(Te.Group,{controlId:"admin-mode",className:"groupe-switch",children:[v.jsx(Te.Label,{className:"me-2",children:"Mode admin"}),v.jsx(Te.Check,{type:"switch"})]}),v.jsxs(Te.Group,{controlId:"theme-mode",className:"groupe-switch",children:[v.jsx(Te.Label,{className:"me-2",children:"Mode clair / sombre"}),v.jsx(Te.Check,{type:"switch"})]})]}),v.jsx(OT,{})]})]})})})}const _T="/Reubot-Studio/assets/bg4-B_Kgg1Y0.png",zT=ht.div`
+`,vy="/Reubot-Studio/assets/brush-BkI5312_.png",gy="/Reubot-Studio/assets/logo2-BZUt5rlr.png",DT="Reubot Studio";function IT(){return v.jsx(LT,{children:v.jsx(fl,{children:v.jsxs(an,{className:"row",children:[v.jsxs(Le,{className:"logo-box",children:[v.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[v.jsx("img",{src:gy,alt:"Logo",className:"logo-img"}),v.jsx("h1",{className:"company-name",children:DT})]}),v.jsx("img",{src:vy,alt:"Brush",className:"brush-img"})]}),v.jsxs(Le,{className:"nav-bar",children:[v.jsxs(Te,{children:[v.jsxs(Te.Group,{controlId:"admin-mode",className:"groupe-switch",children:[v.jsx(Te.Label,{className:"me-2",children:"Mode admin"}),v.jsx(Te.Check,{type:"switch"})]}),v.jsxs(Te.Group,{controlId:"theme-mode",className:"groupe-switch",children:[v.jsx(Te.Label,{className:"me-2",children:"Light / Dark"}),v.jsx(Te.Check,{type:"switch"})]})]}),v.jsx(OT,{})]})]})})})}const _T="/Reubot-Studio/assets/bg4-B_Kgg1Y0.png",zT=ht.div`
   position: relative;
   min-height: 81vh;
   background: rgba(0, 0, 0, 0.5);
