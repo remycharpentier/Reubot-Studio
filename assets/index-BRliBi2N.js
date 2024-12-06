@@ -135,6 +135,10 @@ Error generating stack: `+o.message+`
     .burger {
       display: block;
     }
+    .dropdown-menu-responsive {
+      font-size: xx-large;
+      padding-left: 30px;
+    }
 
     ul {
       flex-direction: column;
@@ -259,7 +263,7 @@ Error generating stack: `+o.message+`
     }
     .brush-img {
       left: -137px;
-      top: 36px;
+      top: 60px;
     }
     .dropdown-menu-responsive {
       display: block;
