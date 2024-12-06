@@ -5,7 +5,7 @@ export const StyledGames = styled.div`
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
-    gap: 1rem;
+    gap: 0.7rem;
     padding: 1rem;
     max-width: 100%;
     height: 500px;
@@ -25,8 +25,8 @@ export const StyledGames = styled.div`
       border-radius: 5px;
     }
   }
-  .relative-container {
-    margin-top: 40px;
+  .games-list {
+    margin-block: 40px;
     position: relative;
   }
   .scroll-button {
@@ -65,22 +65,18 @@ export const StyledGames = styled.div`
   .cards-box .box:hover {
     filter: grayscale(0%) opacity(100%);
   }
-
   .cards-box:hover .box-1 {
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
   }
-
   .cards-box:hover .box-2 {
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
   }
   .box:nth-child(odd) {
     transform: translateY(-16px);
   }
-
   .box:nth-child(even) {
     transform: translateY(16px);
   }
-
   .box::after {
     content: attr(data-text);
     position: absolute;
@@ -96,6 +92,9 @@ export const StyledGames = styled.div`
     transform: translateY(0);
     opacity: 1;
     transition-delay: 200ms;
+  }
+  .selected-game-box {
+    margin-block: 40px;
   }
   .row-description {
     max-height: 450px;
@@ -118,16 +117,13 @@ export const StyledGames = styled.div`
     background-color: #e7e7e7;
     border: 1px solid #cacaca;
   }
-
   .selected-game-info::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #d55959;
   }
-
   .selected-game-info::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
   .flex-space-between {
     display: flex;
     justify-content: space-between;
@@ -136,7 +132,6 @@ export const StyledGames = styled.div`
     display: flex;
     gap: 1rem;
   }
-
   .selected-game-cover {
     width: 300px;
     height: 450px;

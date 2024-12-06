@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
+  h1 {
+    margin-bottom: 40px;
+  }
   .team-img {
     width: 100%;
     max-width: 700px;
@@ -23,7 +26,7 @@ export const StyledHome = styled.div`
     h1 {
       position: relative;
       display: inline-block;
-      margin: 20px 0;
+      margin: 40px 20px;
     }
     h1::before,
     h1::after {

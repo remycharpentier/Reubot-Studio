@@ -16,13 +16,13 @@ export default function Games() {
 
   const scrollLeft = () => {
     if (cardsRef.current) {
-      cardsRef.current.scrollBy({ left: -200, behavior: "smooth" }); // Ajustez la valeur selon vos besoins
+      cardsRef.current.scrollBy({ left: -200, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (cardsRef.current) {
-      cardsRef.current.scrollBy({ left: 200, behavior: "smooth" }); // Ajustez la valeur selon vos besoins
+      cardsRef.current.scrollBy({ left: 200, behavior: "smooth" });
     }
   };
 
@@ -30,8 +30,8 @@ export default function Games() {
     <>
       <StyledGames>
         <h1>Nos Jeux vidéo</h1>
-        <div className="relative-container">
-          <button className="scroll-button scroll-left">
+        <div className="games-list">
+          <button className="scroll-button scroll-left" onClick={scrollLeft}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <div className="cards-box" ref={cardsRef}>
@@ -46,55 +46,51 @@ export default function Games() {
               </button>
             ))}
           </div>
-          <button className="scroll-button scroll-right">
+          <button className="scroll-button scroll-right" onClick={scrollRight}>
             <i className="fas fa-chevron-right"></i>
           </button>
         </div>
-        <br />
         <hr />
-        <br />
-        <div>
+        <div className="selected-game-box">
           {selectedGame && (
-            <>
-              <Row className="row-description">
-                <Col className="selected-game-info" xs={3}>
-                  <h3>Description</h3>
-                  <br />
-                  <div className="flex-space-between">
-                    <strong>Titre</strong>
-                    <span>{selectedGame.title}</span>
-                  </div>
-                  <div className="flex-space-between">
-                    <strong>Genre</strong>
-                    <span>{selectedGame.genre}</span>
-                  </div>
-                  <div className="flex-space-between">
-                    <strong>Mode</strong>
-                    <span>{selectedGame.mode}</span>
-                  </div>
-                  <div className="flex-space-between">
-                    <strong>Support</strong>
-                    <span>{selectedGame.support}</span>
-                  </div>
-                  <div className="flex-space-between">
-                    <strong>Prix</strong>
-                    <span>{selectedGame.price}</span>
-                  </div>
-                  <br />
-                  <span>{selectedGame.resume}</span>
-                </Col>
-                <Col xs={9} className="description-images">
-                  <img
-                    src={selectedGame.cover}
-                    alt=""
-                    className="selected-game-cover"
-                  />
-                  <div className="swiper-box">
-                    <SwiperGallery selectedGame={selectedGame} />
-                  </div>
-                </Col>
-              </Row>
-            </>
+            <Row className="row-description">
+              <Col className="selected-game-info" xs={3}>
+                <h3>Description</h3>
+                <br />
+                <div className="flex-space-between">
+                  <strong>Titre</strong>
+                  <span>{selectedGame.title}</span>
+                </div>
+                <div className="flex-space-between">
+                  <strong>Genre</strong>
+                  <span>{selectedGame.genre}</span>
+                </div>
+                <div className="flex-space-between">
+                  <strong>Mode</strong>
+                  <span>{selectedGame.mode}</span>
+                </div>
+                <div className="flex-space-between">
+                  <strong>Support</strong>
+                  <span>{selectedGame.support}</span>
+                </div>
+                <div className="flex-space-between">
+                  <strong>Prix</strong>
+                  <span>{selectedGame.price}</span>
+                </div>
+                <br />
+                <span>{selectedGame.resume}</span>
+              </Col>
+              <Col xs={9} className="description-images">
+                <img
+                  src={selectedGame.cover}
+                  alt=""
+                  className="selected-game-cover"
+                />
+                <div className="swiper-box">
+                  <SwiperGallery selectedGame={selectedGame} />
+                </div>
+              </Col>
+            </Row>
           )}
         </div>
       </StyledGames>
