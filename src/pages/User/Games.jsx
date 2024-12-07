@@ -8,7 +8,7 @@ import { useRef } from "react";
 
 export default function Games() {
   const [selectedGame, setSelectedGame] = useState(null);
-  const cardsRef = useRef(null); // Référence pour le conteneur des cartes
+  const cardsRef = useRef(null);
 
   const display = (game) => {
     setSelectedGame(game);
@@ -30,6 +30,7 @@ export default function Games() {
     <>
       <StyledGames>
         <h1>Nos Jeux vidéo</h1>
+        {/* Liste des jeux */}
         <div className="games-list">
           <button className="scroll-button scroll-left" onClick={scrollLeft}>
             <i className="fas fa-chevron-left"></i>
@@ -51,41 +52,44 @@ export default function Games() {
           </button>
         </div>
         <hr />
+        {/* Jeu selectionné */}
         <div className="selected-game-box">
           {selectedGame && (
             <Row className="row-description">
               <Col className="selected-game-info" xs={3}>
                 <h3>Description</h3>
                 <br />
-                <div className="flex-space-between">
+                <div className="infos-box">
                   <strong>Titre</strong>
                   <span>{selectedGame.title}</span>
                 </div>
-                <div className="flex-space-between">
+                <div className="infos-box">
                   <strong>Genre</strong>
                   <span>{selectedGame.genre}</span>
                 </div>
-                <div className="flex-space-between">
+                <div className="infos-box">
                   <strong>Mode</strong>
                   <span>{selectedGame.mode}</span>
                 </div>
-                <div className="flex-space-between">
+                <div className="infos-box">
                   <strong>Support</strong>
                   <span>{selectedGame.support}</span>
                 </div>
-                <div className="flex-space-between">
+                <div className="infos-box">
                   <strong>Prix</strong>
                   <span>{selectedGame.price}</span>
                 </div>
                 <br />
                 <span>{selectedGame.resume}</span>
               </Col>
-              <Col xs={9} className="description-images">
+              <Col xs={3} className="cover-box">
                 <img
                   src={selectedGame.cover}
                   alt=""
                   className="selected-game-cover"
                 />
+              </Col>
+              <Col xs={6} className="description-images">
                 <div className="swiper-box">
                   <SwiperGallery selectedGame={selectedGame} />
                 </div>

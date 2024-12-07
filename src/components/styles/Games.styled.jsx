@@ -124,17 +124,19 @@ export const StyledGames = styled.div`
   .selected-game-info::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-  .flex-space-between {
+  .infos-box {
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
   }
   .description-images {
     display: flex;
     gap: 1rem;
+    padding-inline: 0;
   }
   .selected-game-cover {
-    width: 300px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -146,8 +148,7 @@ export const StyledGames = styled.div`
   }
   .swiper-box {
     max-height: 450px;
-    width: 350px;
-    flex: 1;
+    width: 100%;
     .mySwiper2 img {
       object-fit: cover;
       height: 395px;
