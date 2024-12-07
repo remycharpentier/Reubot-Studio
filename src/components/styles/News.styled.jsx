@@ -10,7 +10,8 @@ export const StyledNews = styled.div`
   }
   img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 323px;
     border-radius: 5px;
     object-fit: cover;
   }
@@ -20,6 +21,12 @@ export const StyledNews = styled.div`
   p {
     margin: 1em 0;
     text-indent: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    img {
+      height: 401px;
+    }
   }
   @media (max-width: 992px) {
     .published-text {
