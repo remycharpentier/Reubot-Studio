@@ -1,13 +1,10 @@
-import { StyledNews } from "../../components/styles/News.styled";
-import NewsArticle from "../../components/ui/NewsArticles";
+import NewArticles from "../../components/ui/NewArticles";
 
 export default function News() {
   return (
     <>
-      <StyledNews>
-        <h1>Nos Actualités</h1>
-        <NewsArticle />
-      </StyledNews>
+      <h1>Nos Actualités</h1>
+      <NewArticles />
     </>
   );
 }
