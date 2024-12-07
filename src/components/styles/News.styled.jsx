@@ -11,7 +11,7 @@ export const StyledNews = styled.div`
   img {
     width: 100%;
     /* height: 100%; */
-    height: 323px;
+    height: 223px;
     border-radius: 5px;
     object-fit: cover;
   }
@@ -23,9 +23,15 @@ export const StyledNews = styled.div`
     text-indent: 20px;
   }
 
+  /* Responsive */
+  @media (max-width: 1400px) {
+    img {
+      height: 253px;
+    }
+  }
   @media (max-width: 1200px) {
     img {
-      height: 401px;
+      height: 334px;
     }
   }
   @media (max-width: 992px) {

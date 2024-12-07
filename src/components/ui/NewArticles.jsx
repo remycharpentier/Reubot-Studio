@@ -10,10 +10,10 @@ export default function NewArticles() {
         <React.Fragment key={item.id}>
           <article>
             <Row className="row-article">
-              <Col lg={6} xs={12}>
+              <Col xl={4} lg={5} xs={12}>
                 <img src={item.img} alt={`Image de l'article: ${item.title}`} />
               </Col>
-              <Col lg={6} xs={12} className="text-box">
+              <Col xl={8} lg={7} xs={12} className="text-box">
                 <span className="published-text">
                   Article publié le {item.date}
                 </span>
