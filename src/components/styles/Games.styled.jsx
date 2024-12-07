@@ -164,4 +164,17 @@ export const StyledGames = styled.div`
     height: 55px;
     object-fit: cover;
   }
+
+  // Responsive
+  @media (max-width: 1200px) {
+    .cover-box {
+      padding-right: 0;
+    }
+    .description-images {
+      margin-top: 12px;
+    }
+    .row-description {
+      max-height: none;
+    }
+  }
 `;
