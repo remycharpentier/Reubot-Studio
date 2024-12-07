@@ -21,7 +21,7 @@ export const StyledContact = styled.div`
   }
   .custom-label {
     position: relative;
-    margin-bottom: 37.5px;
+    margin-bottom: 34.8px;
     margin-top: 21px;
   }
 
@@ -58,4 +58,16 @@ export const StyledContact = styled.div`
     transform: translate(0.625rem, -1rem);
     border-color: #030104;
   }
+
+  /* Responsive */
+  @media (max-width: 1400px) {
+    .form {
+      margin-right: 20px;
+    }
+  }
+  /* @media (max-width: 768px) {
+    .form {
+      margin-right: 0;
+    }
+  } */
 `;

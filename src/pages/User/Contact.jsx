@@ -51,7 +51,7 @@ export default function Contact() {
       <StyledContact>
         <h1>Nous contacter</h1>
         <Row>
-          <Col>
+          <Col xl={6} lg={6} md={12} className="order-2 order-lg-1">
             <Form className="form" onSubmit={handleSubmit}>
               <Form.Group
                 className="custom-label"
@@ -113,7 +113,7 @@ export default function Contact() {
               </span>
             )}
           </Col>
-          <Col>
+          <Col xl={6} lg={6} md={12} className="order-1 order-lg-2">
             <h3>Informations</h3>
             <p>
               Vous avez des questions ou autres demandes ?
@@ -148,12 +148,12 @@ export default function Contact() {
               <br />
               remycha@msn.com
               <br />
-              <br />{" "}
             </p>
             <h3 className="wip">
               ⚒ A faire : Rendre les champs obligatoires avec des feedback
               messages
             </h3>
+            <br />
           </Col>
         </Row>
       </StyledContact>
