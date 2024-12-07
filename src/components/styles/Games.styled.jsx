@@ -177,4 +177,10 @@ export const StyledGames = styled.div`
       max-height: none;
     }
   }
+  @media (max-width: 768px) {
+    .cover-box {
+      padding: 0;
+      margin-top: 12px;
+    }
+  }
 `;

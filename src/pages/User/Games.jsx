@@ -56,7 +56,7 @@ export default function Games() {
         <div className="selected-game-box">
           {selectedGame && (
             <Row className="row-description">
-              <Col className="selected-game-info" xl={3} md={8} xs={3}>
+              <Col className="selected-game-info" xl={3} md={8} sm={12}>
                 <h3>Description</h3>
                 <br />
                 <div className="infos-box">
@@ -82,14 +82,14 @@ export default function Games() {
                 <br />
                 <span>{selectedGame.resume}</span>
               </Col>
-              <Col xl={3} md={4} xs={3} className="cover-box">
+              <Col xl={3} md={4} sm={12} className="cover-box">
                 <img
                   src={selectedGame.cover}
                   alt=""
                   className="selected-game-cover"
                 />
               </Col>
-              <Col xl={6} md={12} xs={6} className="description-images">
+              <Col xl={6} md={12} sm={12} className="description-images">
                 <div className="swiper-box">
                   <SwiperGallery selectedGame={selectedGame} />
                 </div>
