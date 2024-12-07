@@ -42,4 +42,9 @@ export const StyledNews = styled.div`
       margin-top: 20px;
     }
   }
+  @media (max-width: 768px) {
+    img {
+      height: 257px;
+    }
+  }
 `;
