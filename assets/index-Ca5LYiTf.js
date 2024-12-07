@@ -692,7 +692,7 @@ Error generating stack: `+o.message+`
   img {
     width: 100%;
     /* height: 100%; */
-    height: 323px;
+    height: 223px;
     border-radius: 5px;
     object-fit: cover;
   }
@@ -704,9 +704,15 @@ Error generating stack: `+o.message+`
     text-indent: 20px;
   }
 
+  /* Responsive */
+  @media (max-width: 1400px) {
+    img {
+      height: 253px;
+    }
+  }
   @media (max-width: 1200px) {
     img {
-      height: 401px;
+      height: 334px;
     }
   }
   @media (max-width: 992px) {
@@ -717,7 +723,7 @@ Error generating stack: `+o.message+`
       margin-top: 20px;
     }
   }
-`;function ik(){return v.jsx(rk,{children:lm.map((e,t)=>v.jsxs(ne.Fragment,{children:[v.jsx("article",{children:v.jsxs(an,{className:"row-article",children:[v.jsx(Oe,{lg:6,xs:12,children:v.jsx("img",{src:e.img,alt:`Image de l'article: ${e.title}`})}),v.jsxs(Oe,{lg:6,xs:12,className:"text-box",children:[v.jsxs("span",{className:"published-text",children:["Article publié le ",e.date]}),v.jsx("h2",{children:e.title}),v.jsx("p",{children:e.text})]})]})}),t<lm.length-1&&v.jsx("hr",{})]},e.id))})}function ok(){return v.jsxs(v.Fragment,{children:[v.jsx("h1",{children:"Nos Actualités"}),v.jsx(ik,{})]})}const sk="/Reubot-Studio/assets/team8-DJvSEZkb.jpg",ak="/Reubot-Studio/assets/team9-BTmJoy-1.jpg",lk="/Reubot-Studio/assets/studio-bVBKUdUG.jpg",uk="/Reubot-Studio/assets/location-uF4Vi1iK.png",ck=ht.div`
+`;function ik(){return v.jsx(rk,{children:lm.map((e,t)=>v.jsxs(ne.Fragment,{children:[v.jsx("article",{children:v.jsxs(an,{className:"row-article",children:[v.jsx(Oe,{xl:4,lg:5,xs:12,children:v.jsx("img",{src:e.img,alt:`Image de l'article: ${e.title}`})}),v.jsxs(Oe,{xl:8,lg:7,xs:12,className:"text-box",children:[v.jsxs("span",{className:"published-text",children:["Article publié le ",e.date]}),v.jsx("h2",{children:e.title}),v.jsx("p",{children:e.text})]})]})}),t<lm.length-1&&v.jsx("hr",{})]},e.id))})}function ok(){return v.jsxs(v.Fragment,{children:[v.jsx("h1",{children:"Nos Actualités"}),v.jsx(ik,{})]})}const sk="/Reubot-Studio/assets/team8-DJvSEZkb.jpg",ak="/Reubot-Studio/assets/team9-BTmJoy-1.jpg",lk="/Reubot-Studio/assets/studio-bVBKUdUG.jpg",uk="/Reubot-Studio/assets/location-uF4Vi1iK.png",ck=ht.div`
   .team-img {
     height: 340px;
     object-fit: cover;
