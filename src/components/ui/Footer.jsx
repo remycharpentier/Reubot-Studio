@@ -26,7 +26,6 @@ export default function Footer({ isDarkMode }) {
             <a href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor">
               <img src={logo2} alt="Logo de l'entreprise" id="footer-logo" />
             </a>
-            <br />
             <div className="company-container">
               <div className="company-text">
                 <a
@@ -41,8 +40,6 @@ export default function Footer({ isDarkMode }) {
               </div>
               <img src={brush} alt="Pinceau" className="brush-img" />
             </div>
-            <br />
-            <hr className="footer-divider" />
           </Col>
           <Col className="adresse">
             {/* Contenu de la deuxième colonne */}
@@ -52,7 +49,6 @@ export default function Footer({ isDarkMode }) {
             </a>
             <br />
             <span id="adresse-texte">45 rue Thiac, 33000 Bordeaux</span>
-            <hr className="footer-divider" />
           </Col>
           <Col>
             {/* Contenu de la troisième colonne */}
@@ -71,13 +67,11 @@ export default function Footer({ isDarkMode }) {
                 <img src={twitter} alt="Twitter" />
               </a>
             </div>
-            <hr className="footer-divider" />
           </Col>
           <Col className="translate">
             {/* Contenu de la quatrième colonne */}
             <h3>Traduire</h3>
             <Flag />
-            <hr className="footer-divider" />
           </Col>
         </Row>
         <hr />

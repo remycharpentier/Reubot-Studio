@@ -1,7 +1,7 @@
 import us from "../../assets/img/footer/us.png";
 import fr from "../../assets/img/footer/fr.png";
 import de from "../../assets/img/footer/de.png";
-import es from "../../assets/img/footer/es.png";
+import es from "../../assets/img/footer/sp.png";
 import it from "../../assets/img/footer/it.png";
 import ch from "../../assets/img/footer/ch.png";
 

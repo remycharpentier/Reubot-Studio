@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.div`
   position: relative;
+  .col {
+    margin-bottom: 30px;
+  }
 
   #row-footer {
     margin-top: 16px;
@@ -77,7 +80,6 @@ export const StyledFooter = styled.div`
   }
 
   /*Responsive*/
-
   @media (max-width: 1400px) {
     #row-footer {
       display: flex;
@@ -88,26 +90,11 @@ export const StyledFooter = styled.div`
       flex: 0 0 50%;
       box-sizing: border-box;
     }
-    .footer-divider {
-      display: block;
-      margin: 10px 0;
-      border: none;
-      height: 1px;
-      background-color: #ccc;
-    }
   }
 
   @media (max-width: 768px) {
     #row-footer > div {
       flex: 0 0 100%;
-    }
-
-    .footer-divider {
-      display: block;
-      margin: 10px 0;
-      border: none;
-      height: 1px;
-      background-color: #ccc;
     }
   }
 `;
