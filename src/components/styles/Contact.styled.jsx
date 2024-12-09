@@ -41,6 +41,9 @@ export const StyledContact = styled.div`
     background: rgba(255, 144, 138, 1);
     padding-inline: 0.25rem;
     border: 2px solid transparent;
+    background-color: ${(props) =>
+      props.isDarkMode ? "#0A3054" : "rgba(255, 144, 138, 1)"};
+    color: ${(props) => (props.isDarkMode ? "#F2F2F2" : "#030104")};
   }
 
   textarea {

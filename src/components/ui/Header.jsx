@@ -45,5 +45,5 @@ export default function Header({ toggleTheme, isDarkMode }) {
 // Validation des props
 Header.propTypes = {
   toggleTheme: PropTypes.func.isRequired,
-  isDarkMode: PropTypes.bool.isRequired, // Ajoutez cette ligne
+  isDarkMode: PropTypes.bool.isRequired,
 };

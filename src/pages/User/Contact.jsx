@@ -1,10 +1,13 @@
+import PropTypes from "prop-types";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 import correct from "../../assets/img/form/correct.png";
 
 export default function Contact() {
+  const { isDarkMode } = useOutletContext();
   const [formData, setFormData] = useState({
     lastName: "",
     name: "",
@@ -12,8 +15,7 @@ export default function Contact() {
     phone: "",
     message: "",
   });
-  const [feedbackMessage, setFeedbackMessage] = useState(""); // État pour le message de retour
-
+  const [feedbackMessage, setFeedbackMessage] = useState("");
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -48,7 +50,7 @@ export default function Contact() {
   };
   return (
     <>
-      <StyledContact>
+      <StyledContact isDarkMode={isDarkMode}>
         <h1>Nous contacter</h1>
         <Row>
           <Col xl={6} lg={6} md={12} className="order-2 order-lg-1">
@@ -105,9 +107,6 @@ export default function Contact() {
               <Button variant="success" type="submit">
                 Envoyer
               </Button>
-              <Button variant="contained" color="success">
-                Success
-              </Button>
             </Form>
             {feedbackMessage && (
               <span className="feebackMessage">
@@ -163,3 +162,7 @@ export default function Contact() {
     </>
   );
 }
+// Validation des props
+Contact.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+};

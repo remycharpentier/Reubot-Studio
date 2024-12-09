@@ -23,7 +23,7 @@ const Root = () => {
       <CssBaseline />
       <StyledGlobal isDarkMode={isDarkMode} />
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <Main />
+      <Main isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </ThemeProvider>
   );

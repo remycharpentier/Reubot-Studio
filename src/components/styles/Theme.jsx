@@ -8,7 +8,7 @@ const lightTheme = createTheme({
       main: "#1976d2", // Couleur principale pour le mode clair
     },
     background: {
-      default: "#ffffff", // Couleur de fond pour le mode clair
+      default: "#F2F2F2", // Couleur de fond pour le mode clair
       paper: "#f5f5f5", // Couleur de fond pour les éléments de papier
     },
     text: {
@@ -29,7 +29,7 @@ const darkTheme = createTheme({
       paper: "#1e1e1e", // Couleur de fond pour les éléments de papier
     },
     text: {
-      primary: "#ffffff", // Couleur du texte principal pour le mode sombre
+      primary: "#F2F2F2", // Couleur du texte principal pour le mode sombre
       secondary: "#bbbbbb", // Couleur du texte secondaire pour le mode sombre
     },
   },
