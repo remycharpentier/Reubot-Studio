@@ -218,8 +218,8 @@ Error generating stack: `+o.message+`
 
   #admin-mode {
     margin: 0;
-    background-color: #e9ecef;
-    border-color: #adb5bd;
+    background-color: #ddbea9;
+    border-color: #ddbea9;
   }
 
   #theme-mode:checked {
@@ -228,8 +228,8 @@ Error generating stack: `+o.message+`
   }
 
   #admin-mode:checked {
-    background-color: #32b343;
-    border-color: #32b343;
+    background-color: #6e4c0d;
+    border-color: #6e4c0d;
   }
 
   #admin-mode:focus,
@@ -288,7 +288,7 @@ Error generating stack: `+o.message+`
       display: none;
     }
   }
-`,Yw="/Reubot-Studio/assets/brush-BkI5312_.png",Xw="/Reubot-Studio/assets/logo2-BZUt5rlr.png",J5="Reubot Studio";function Qw({toggleTheme:e,isDarkMode:t}){return w.jsx(Q5,{isDarkMode:t,children:w.jsx(Tu,{children:w.jsxs(Br,{className:"row",children:[w.jsxs(Ue,{className:"logo-box",children:[w.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[w.jsx("img",{src:Xw,alt:"Logo",className:"logo-img"}),w.jsx("h1",{className:"company-name",children:J5})]}),w.jsx("img",{src:Yw,alt:"Brush",className:"brush-img"})]}),w.jsxs(Ue,{className:"nav-bar",children:[w.jsxs(Le,{children:[w.jsxs(Le.Group,{controlId:"admin-mode",className:"groupe-switch",children:[w.jsx(Le.Label,{className:"me-2",children:"Mode admin"}),w.jsx(Le.Check,{type:"switch"})]}),w.jsxs(Le.Group,{controlId:"theme-mode",className:"groupe-switch",children:[w.jsx(Le.Label,{className:"me-2",children:"Light / Dark"}),w.jsx(Le.Check,{type:"switch",onChange:e})]})]}),w.jsx(X5,{})]})]})})})}Qw.propTypes={toggleTheme:Ot.func.isRequired,isDarkMode:Ot.bool.isRequired};const Z5="/Reubot-Studio/assets/bg4-B_Kgg1Y0.png",eP=Qt.div`
+`,Yw="/Reubot-Studio/assets/brush-BkI5312_.png",Xw="/Reubot-Studio/assets/logo2-BZUt5rlr.png",J5="Reubot Studio";function Qw({toggleTheme:e,isDarkMode:t}){return w.jsx(Q5,{isDarkMode:t,children:w.jsx(Tu,{children:w.jsxs(Br,{className:"row",children:[w.jsxs(Ue,{className:"logo-box",children:[w.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[w.jsx("img",{src:Xw,alt:"Logo",className:"logo-img"}),w.jsx("h1",{className:"company-name",children:J5})]}),w.jsx("img",{src:Yw,alt:"Brush",className:"brush-img"})]}),w.jsxs(Ue,{className:"nav-bar",children:[w.jsxs(Le,{children:[w.jsxs(Le.Group,{controlId:"admin-mode",className:"groupe-switch",children:[w.jsx(Le.Label,{className:"me-2",children:"Admin"}),w.jsx(Le.Check,{type:"switch"})]}),w.jsxs(Le.Group,{controlId:"theme-mode",className:"groupe-switch",children:[w.jsx(Le.Label,{className:"me-2",children:"Thème"}),w.jsx(Le.Check,{type:"switch",onChange:e})]})]}),w.jsx(X5,{})]})]})})})}Qw.propTypes={toggleTheme:Ot.func.isRequired,isDarkMode:Ot.bool.isRequired};const Z5="/Reubot-Studio/assets/bg4-B_Kgg1Y0.png",eP=Qt.div`
   position: relative;
   min-height: 81vh;
   background: rgba(0, 0, 0, 0.5);
