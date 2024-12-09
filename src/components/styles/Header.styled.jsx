@@ -28,7 +28,6 @@ export const StyledHeader = styled.div`
     position: relative;
     z-index: 2;
     top: 9px;
-    position: relative;
   }
 
   .brush-img {
@@ -38,6 +37,7 @@ export const StyledHeader = styled.div`
     left: -106px;
     z-index: -1;
     filter: ${(props) => (props.isDarkMode ? "invert(1)" : "drop-shadow")};
+    transition: filter 0.6s ease;
   }
 
   .nav-bar {
