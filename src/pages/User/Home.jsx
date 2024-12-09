@@ -8,6 +8,7 @@ export default function Home() {
     <StyledHome>
       <article>
         <h1>Bienvenue !</h1>
+
         <img
           src={imgTeam13}
           alt="Équipe de Reubot Studio"
