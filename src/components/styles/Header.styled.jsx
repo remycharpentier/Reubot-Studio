@@ -37,7 +37,7 @@ export const StyledHeader = styled.div`
     left: -106px;
     z-index: -1;
     filter: ${(props) => (props.isDarkMode ? "invert(1)" : "drop-shadow")};
-    transition: filter 0.6s ease;
+    transition: filter 0.3s ease;
   }
 
   .nav-bar {
