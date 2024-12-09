@@ -21,7 +21,7 @@ const Root = () => {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       {/* Normalisation des styles CSS */}
       <CssBaseline />
-      <StyledGlobal />
+      <StyledGlobal isDarkMode={isDarkMode} />
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Main />
       <Footer isDarkMode={isDarkMode} />
