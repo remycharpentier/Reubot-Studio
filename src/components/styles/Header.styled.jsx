@@ -23,7 +23,7 @@ export const StyledHeader = styled.div`
   .logo-img {
     filter: ${(props) =>
       props.isDarkMode
-        ? "invert(1) drop-shadow(-3px 5px 0px #f6c9a8)"
+        ? "invert(1) drop-shadow(-3px 5px 0px #0B2F53)"
         : "drop-shadow(-3px 5px 0px #f6c9a8)"};
     position: relative;
     z-index: 2;
@@ -37,6 +37,7 @@ export const StyledHeader = styled.div`
     top: 79px;
     left: -106px;
     z-index: -1;
+    filter: ${(props) => (props.isDarkMode ? "invert(1)" : "drop-shadow")};
   }
 
   .nav-bar {
@@ -56,18 +57,26 @@ export const StyledHeader = styled.div`
     width: 100%;
   }
 
-  #admin-mode,
   #theme-mode {
+    margin: 0;
+    background-color: #ff9791;
+    border-color: #ff9791;
+  }
+
+  #admin-mode {
     margin: 0;
     background-color: #e9ecef;
     border-color: #adb5bd;
   }
 
-  #admin-mode:checked,
   #theme-mode:checked {
-    background-color: #ff9791;
-    border-color: #ff9791;
-    box-shadow: 0 0 0 0.2rem rgba(241, 234, 185, 0.5);
+    background-color: #026b6f;
+    border-color: #0b2f53;
+  }
+
+  #admin-mode:checked {
+    background-color: #32b343;
+    border-color: #32b343;
   }
 
   #admin-mode:focus,

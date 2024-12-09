@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import logo2 from "../../assets/img/logo/logo2.png";
 import location from "../../assets/img/footer/location_logo.png";
 import linkedin from "../../assets/img/footer/linkedin.png";
@@ -15,9 +16,9 @@ import { StyledFooter } from "../styles/Footer.styled";
 
 const nomEntreprise = "Reubot Studio";
 
-export default function Footer() {
+export default function Footer({ isDarkMode }) {
   return (
-    <StyledFooter>
+    <StyledFooter isDarkMode={isDarkMode}>
       <Container>
         <Row id="row-footer">
           <Col>
@@ -36,7 +37,7 @@ export default function Footer() {
                   {nomEntreprise}
                 </a>
                 <span> &copy; 2024</span>
-                <p>Développement de jeux vidéo</p>
+                <p>Développeur de jeux vidéo</p>
               </div>
               <img src={brush} alt="Pinceau" className="brush-img" />
             </div>
@@ -84,3 +85,7 @@ export default function Footer() {
     </StyledFooter>
   );
 }
+// Validation des props
+Footer.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired, // Ajoutez cette ligne
+};

@@ -24,7 +24,7 @@ const Root = () => {
       <StyledGlobal />
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Main />
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </ThemeProvider>
   );
 };
