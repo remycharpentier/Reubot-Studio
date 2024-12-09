@@ -65,8 +65,8 @@ export const StyledHeader = styled.div`
 
   #admin-mode {
     margin: 0;
-    background-color: #e9ecef;
-    border-color: #adb5bd;
+    background-color: #ddbea9;
+    border-color: #ddbea9;
   }
 
   #theme-mode:checked {
@@ -75,8 +75,8 @@ export const StyledHeader = styled.div`
   }
 
   #admin-mode:checked {
-    background-color: #32b343;
-    border-color: #32b343;
+    background-color: #6e4c0d;
+    border-color: #6e4c0d;
   }
 
   #admin-mode:focus,
