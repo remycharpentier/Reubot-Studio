@@ -21,11 +21,14 @@ export const StyledHeader = styled.div`
     }
   }
   .logo-img {
+    filter: ${(props) =>
+      props.isDarkMode
+        ? "invert(1) drop-shadow(-3px 5px 0px #f6c9a8)"
+        : "drop-shadow(-3px 5px 0px #f6c9a8)"};
     position: relative;
     z-index: 2;
     top: 9px;
     position: relative;
-    filter: drop-shadow(-3px 5px 0px #f6c9a8);
   }
 
   .brush-img {

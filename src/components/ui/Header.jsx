@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import NavBar from "./NavBar";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { StyledHeader } from "../styles/Header.styled";
@@ -6,9 +7,9 @@ import logo2 from "../../assets/img/logo/logo2.png";
 
 const companyName = "Reubot Studio";
 
-export default function Header() {
+export default function Header({ toggleTheme, isDarkMode }) {
   return (
-    <StyledHeader>
+    <StyledHeader isDarkMode={isDarkMode}>
       <Container>
         <Row className="row">
           <Col className="logo-box">
@@ -30,7 +31,7 @@ export default function Header() {
               </Form.Group>
               <Form.Group controlId="theme-mode" className="groupe-switch">
                 <Form.Label className="me-2">Light / Dark</Form.Label>
-                <Form.Check type="switch" />
+                <Form.Check type="switch" onChange={toggleTheme} />
               </Form.Group>
             </Form>
             <NavBar />
@@ -40,3 +41,9 @@ export default function Header() {
     </StyledHeader>
   );
 }
+
+// Validation des props
+Header.propTypes = {
+  toggleTheme: PropTypes.func.isRequired,
+  isDarkMode: PropTypes.bool.isRequired, // Ajoutez cette ligne
+};

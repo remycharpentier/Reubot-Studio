@@ -29,7 +29,6 @@ export const StyledNavBar = styled.div`
 
   a {
     text-decoration: none;
-    color: black;
     font-weight: bolder;
   }
 

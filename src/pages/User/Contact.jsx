@@ -105,6 +105,9 @@ export default function Contact() {
               <Button variant="success" type="submit">
                 Envoyer
               </Button>
+              <Button variant="contained" color="success">
+                Success
+              </Button>
             </Form>
             {feedbackMessage && (
               <span className="feebackMessage">
