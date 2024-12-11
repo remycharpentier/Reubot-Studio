@@ -26,7 +26,6 @@ export const StyledMain = styled.div`
 
   #main-container {
     position: relative;
-    z-index: 2;
     padding-block: 50px;
   }
 `;

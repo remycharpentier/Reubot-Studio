@@ -87,10 +87,6 @@ export const StyledHeader = styled.div`
   .form-switch {
     padding-left: 0;
   }
-  .dropdown-menu-responsive {
-    display: none;
-  }
-
   // Responsive
   @media (max-width: 992px) {
     .row {

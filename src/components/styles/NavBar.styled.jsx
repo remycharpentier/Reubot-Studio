@@ -32,10 +32,14 @@ export const StyledNavBar = styled.div`
     font-weight: bolder;
   }
 
-  @media (max-width: 992px) {
-    .burger {
-      display: block;
+  /* Responsive */
+  @media (min-width: 993px) {
+    .dropdown-menu-responsive {
+      display: none !important;
     }
+  }
+
+  @media (max-width: 992px) {
     .dropdown-menu-responsive {
       font-size: xx-large;
       padding-left: 30px;
