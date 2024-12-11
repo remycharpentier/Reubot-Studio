@@ -129,10 +129,14 @@ Error generating stack: `+o.message+`
     font-weight: bolder;
   }
 
-  @media (max-width: 992px) {
-    .burger {
-      display: block;
+  /* Responsive */
+  @media (min-width: 993px) {
+    .dropdown-menu-responsive {
+      display: none !important;
     }
+  }
+
+  @media (max-width: 992px) {
     .dropdown-menu-responsive {
       font-size: xx-large;
       padding-left: 30px;
@@ -240,10 +244,6 @@ Error generating stack: `+o.message+`
   .form-switch {
     padding-left: 0;
   }
-  .dropdown-menu-responsive {
-    display: none;
-  }
-
   // Responsive
   @media (max-width: 992px) {
     .row {
@@ -294,13 +294,19 @@ Error generating stack: `+o.message+`
   position: relative;
   background-attachment: fixed;
   background-image: url(${Z5});
-  background-size: cover;
+  background-size: 139%;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 0 2px 10px #000;
   background-position-x: right;
-  background-size: 139%;
+  transition: background-size 1.5s ease, background-position 1.5s ease;
+
+  /* Responsive */
+  @media (max-width: 1057px) {
+    background-size: cover;
+    background-position-x: center;
+  }
 
   /* Assombrit mon bg */
   &::before {
@@ -315,7 +321,6 @@ Error generating stack: `+o.message+`
 
   #main-container {
     position: relative;
-    z-index: 2;
     padding-block: 50px;
   }
 `;function Jw({isDarkMode:e}){return x.jsx(x.Fragment,{children:x.jsx(e3,{children:x.jsx(Tu,{id:"main-container",children:x.jsx(H2,{context:{isDarkMode:e}})})})})}Jw.propTypes={isDarkMode:Ot.bool.isRequired};const t3="/Reubot-Studio/assets/location_logo-CYzAVYxG.png",r3="/Reubot-Studio/assets/linkedin-DgLzhU7_.png",n3="/Reubot-Studio/assets/git-D-GiNryt.png",i3="/Reubot-Studio/assets/facebook-BcNyBvTH.png",o3="/Reubot-Studio/assets/twitter-SwWbRagI.png",s3="/Reubot-Studio/assets/us-B_Qmb0cW.png",a3="/Reubot-Studio/assets/fr-7u_3IVRv.png",l3="/Reubot-Studio/assets/de-DLFWSI67.png",u3="/Reubot-Studio/assets/sp-B1nfyy-h.png",c3="/Reubot-Studio/assets/it-D1OWnJ0_.png",d3="/Reubot-Studio/assets/ch-9KQTkCfy.png",f3=x.jsx("img",{src:s3,alt:"",className:"flag"}),p3=x.jsx("img",{src:a3,alt:"",className:"flag"}),m3=x.jsx("img",{src:l3,alt:"",className:"flag"}),h3=x.jsx("img",{src:u3,alt:"",className:"flag"}),g3=x.jsx("img",{src:c3,alt:"",className:"flag"}),v3=x.jsx("img",{src:d3,alt:"",className:"flag"});function y3(){const e=[{id:1,img:f3},{id:2,img:p3},{id:3,img:m3},{id:4,img:h3},{id:5,img:g3},{id:6,img:v3}];return x.jsx(x.Fragment,{children:x.jsx("ul",{children:e.map(t=>x.jsx("li",{children:x.jsx("a",{href:"#",children:t.img})},t.id))})})}const w3=Qt.div`
