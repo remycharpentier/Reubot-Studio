@@ -5,15 +5,15 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#1976d2", // Couleur principale pour le mode clair
+      main: "#1976d2",
     },
     background: {
-      default: "#F2F2F2", // Couleur de fond pour le mode clair
-      paper: "#f5f5f5", // Couleur de fond pour les éléments de papier
+      default: "#F2F2F2",
+      paper: "#f5f5f5",
     },
     text: {
-      primary: "#000000", // Couleur du texte principal pour le mode clair
-      secondary: "#555555", // Couleur du texte secondaire pour le mode clair
+      primary: "#000000",
+      secondary: "#555555",
     },
   },
 });
@@ -22,15 +22,15 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#90caf9", // Couleur principale pour le mode sombre
+      main: "#90caf9",
     },
     background: {
-      default: "#121212", // Couleur de fond pour le mode sombre
-      paper: "#1e1e1e", // Couleur de fond pour les éléments de papier
+      default: "#121212",
+      paper: "#1e1e1e",
     },
     text: {
-      primary: "#F2F2F2", // Couleur du texte principal pour le mode sombre
-      secondary: "#bbbbbb", // Couleur du texte secondaire pour le mode sombre
+      primary: "#F2F2F2",
+      secondary: "#bbbbbb",
     },
   },
 });
