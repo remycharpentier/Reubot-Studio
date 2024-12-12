@@ -25,7 +25,11 @@ export default function Header({ toggleTheme, isDarkMode }) {
           </Col>
           <Col className="nav-bar">
             <Form>
-              <Form.Group controlId="admin-mode" className="groupe-switch">
+              <Form.Group
+                controlId="admin-mode"
+                className="groupe-switch"
+                style={{ visibility: "hidden" }}
+              >
                 <Form.Label className="me-2">Admin</Form.Label>
                 <Form.Check type="switch" />
               </Form.Group>

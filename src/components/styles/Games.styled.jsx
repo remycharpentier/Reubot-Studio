@@ -10,6 +10,7 @@ export const StyledGames = styled.div`
     max-width: 100%;
     height: 500px;
     scroll-snap-type: x mandatory;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
     button {
       scroll-snap-align: start;
       border: none;

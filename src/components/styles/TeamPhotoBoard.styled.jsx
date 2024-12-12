@@ -1,11 +1,25 @@
 import styled from "styled-components";
 
+const backgroundColors = [
+  "rgba(201, 76, 78, 0.3)",
+  "rgba(199, 122, 62, 0.3)",
+  "rgba(209, 163, 42, 0.3)",
+  "rgba(163, 168, 32, 0.3)",
+  "rgba(62, 122, 90, 0.3)",
+  "rgba(62, 122, 90, 0.3)",
+  "rgba(15, 106, 158, 0.3)",
+  "rgba(46, 78, 140, 0.3)",
+  "rgba(78, 58, 106, 0.3)",
+  "rgba(206, 175, 255, 0.3)",
+  "rgba(246, 178, 255, 0.3)",
+  "rgba(255, 198, 254, 0.3)",
+];
+
 export const StyledTeamPhotoBoard = styled.div`
   .team-card {
     padding: 10px;
-    color: #f2f2f2f2;
-  }
-  .team-card img {
+    color: #f2f2f2;
+    height: 100%;
   }
   .bg {
     border-radius: 16px;
@@ -13,46 +27,25 @@ export const StyledTeamPhotoBoard = styled.div`
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-  .bg-0 {
-    background: rgba(201, 76, 78, 0.3);
+  .board {
+    margin-bottom: 60px;
   }
-  .bg-1 {
-    background: rgba(199, 122, 62, 0.3);
-  }
-  .bg-2 {
-    background: rgba(209, 163, 42, 0.3);
-  }
-  .bg-3 {
-    background: rgba(163, 168, 32, 0.3);
-  }
-  .bg-4 {
-    background: rgba(62, 122, 90, 0.3);
-  }
-  .bg-5 {
-    background: rgba(62, 122, 90, 0.3);
-  }
-  .bg-6 {
-    background: rgba(15, 106, 158, 0.3);
-  }
-  .bg-7 {
-    background: rgba(46, 78, 140, 0.3);
-  }
-  .bg-8 {
-    background: rgba(78, 58, 106, 0.3);
-  }
-  .bg-9 {
-    background: rgba(206, 175, 255, 0.3);
-  }
-  .bg-10 {
-    background: rgba(246, 178, 255, 0.3);
-  }
-  .bg-11 {
-    background: rgba(255, 198, 254, 0.3);
-  }
+  ${backgroundColors.map(
+    (color, index) => `
+    .bg-${index} {
+      background: ${color};
+    }
+  `
+  )}
   .row.gap-20 {
     margin: -10px;
   }
   .row.gap-20 > .col {
     padding: 10px;
+  }
+  @media (max-width: 768px) {
+    .team-card {
+      font-size: 0.9rem;
+    }
   }
 `;

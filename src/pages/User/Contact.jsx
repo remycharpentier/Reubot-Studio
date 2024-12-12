@@ -151,10 +151,6 @@ export default function Contact() {
               remycha@msn.com
               <br />
             </p>
-            <h3 className="wip">
-              ⚒ A faire : Rendre les champs obligatoires avec des feedback
-              messages
-            </h3>
             <br />
           </Col>
         </Row>

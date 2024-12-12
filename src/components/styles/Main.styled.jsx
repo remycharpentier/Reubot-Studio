@@ -5,13 +5,19 @@ export const StyledMain = styled.div`
   position: relative;
   background-attachment: fixed;
   background-image: url(${bg1});
-  background-size: cover;
+  background-size: 139%;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 0 2px 10px #000;
   background-position-x: right;
-  background-size: 139%;
+  transition: background-size 1.5s ease, background-position 1.5s ease;
+
+  /* Responsive */
+  @media (max-width: 1057px) {
+    background-size: cover;
+    background-position-x: center;
+  }
 
   /* Assombrit mon bg */
   &::before {
