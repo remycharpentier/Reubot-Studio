@@ -13,11 +13,7 @@ export default function Header({ toggleTheme, isDarkMode }) {
       <Container>
         <Row>
           <Col className="logo-box">
-            <a
-              href="https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/">
               <img src={logo2} alt="Logo" className="logo-img" />
               <h1 className="company-name">{companyName}</h1>
               <img src={brush} alt="Brush" className="brush-img" />

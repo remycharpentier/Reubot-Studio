@@ -37,8 +37,6 @@ export const StyledMain = styled.div`
       h1::after {
         width: 0;
       }
-    }
-    .titre-ligne {
       h2::before,
       h2::after {
         width: 0;
