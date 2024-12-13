@@ -282,7 +282,7 @@ Error generating stack: `+o.message+`
       }
     }
   }
-`,Yw="/Reubot-Studio/assets/brush-BkI5312_.png",Xw="/Reubot-Studio/assets/logo2-BZUt5rlr.png",J5="Reubot Studio";function Qw({toggleTheme:e,isDarkMode:t}){return x.jsx(Q5,{isDarkMode:t,children:x.jsx(Tu,{children:x.jsxs(Vn,{children:[x.jsx(Ue,{className:"logo-box",children:x.jsxs("a",{href:"https://www.canva.com/design/DAGWcQ7DDOY/gRMK4gLjBKwGr9lV2gcDsw/view?utm_content=DAGWcQ7DDOY&utm_campaign=designshare&utm_medium=link&utm_source=editor",target:"_blank",rel:"noopener noreferrer",children:[x.jsx("img",{src:Xw,alt:"Logo",className:"logo-img"}),x.jsx("h1",{className:"company-name",children:J5}),x.jsx("img",{src:Yw,alt:"Brush",className:"brush-img"})]})}),x.jsxs(Ue,{className:"nav-bar",children:[x.jsxs(Le,{children:[x.jsxs(Le.Group,{controlId:"admin-mode",className:"groupe-switch",style:{visibility:"hidden"},children:[x.jsx(Le.Label,{className:"me-2",children:"Admin"}),x.jsx(Le.Check,{type:"switch"})]}),x.jsxs(Le.Group,{controlId:"theme-mode",className:"groupe-switch",children:[x.jsx(Le.Label,{className:"me-2",children:"Thème"}),x.jsx(Le.Check,{type:"switch",onChange:e})]})]}),x.jsx(X5,{})]})]})})})}Qw.propTypes={toggleTheme:Ot.func.isRequired,isDarkMode:Ot.bool.isRequired};const Z5="/Reubot-Studio/assets/bg1-BYaIaQbw.jpg",e3=Qt.div`
+`,Yw="/Reubot-Studio/assets/brush-BkI5312_.png",Xw="/Reubot-Studio/assets/logo2-BZUt5rlr.png",J5="Reubot Studio";function Qw({toggleTheme:e,isDarkMode:t}){return x.jsx(Q5,{isDarkMode:t,children:x.jsx(Tu,{children:x.jsxs(Vn,{children:[x.jsx(Ue,{className:"logo-box",children:x.jsxs("a",{href:"/",children:[x.jsx("img",{src:Xw,alt:"Logo",className:"logo-img"}),x.jsx("h1",{className:"company-name",children:J5}),x.jsx("img",{src:Yw,alt:"Brush",className:"brush-img"})]})}),x.jsxs(Ue,{className:"nav-bar",children:[x.jsxs(Le,{children:[x.jsxs(Le.Group,{controlId:"admin-mode",className:"groupe-switch",style:{visibility:"hidden"},children:[x.jsx(Le.Label,{className:"me-2",children:"Admin"}),x.jsx(Le.Check,{type:"switch"})]}),x.jsxs(Le.Group,{controlId:"theme-mode",className:"groupe-switch",children:[x.jsx(Le.Label,{className:"me-2",children:"Thème"}),x.jsx(Le.Check,{type:"switch",onChange:e})]})]}),x.jsx(X5,{})]})]})})})}Qw.propTypes={toggleTheme:Ot.func.isRequired,isDarkMode:Ot.bool.isRequired};const Z5="/Reubot-Studio/assets/bg1-BYaIaQbw.jpg",e3=Qt.div`
   position: relative;
   background-attachment: fixed;
   background-image: url(${Z5});
@@ -318,8 +318,6 @@ Error generating stack: `+o.message+`
       h1::after {
         width: 0;
       }
-    }
-    .titre-ligne {
       h2::before,
       h2::after {
         width: 0;
