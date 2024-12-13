@@ -34,7 +34,11 @@ export const StyledMain = styled.div`
   @media (max-width: 576px) {
     .titre-ligne {
       h1::before,
-      h1::after,
+      h1::after {
+        width: 0;
+      }
+    }
+    .titre-ligne {
       h2::before,
       h2::after {
         width: 0;

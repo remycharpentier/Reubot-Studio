@@ -5,13 +5,6 @@ export const StyledNavBar = styled.div`
   display: flex;
   justify-content: space-between;
 
-  .burger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    margin-left: auto;
-  }
-
   ul {
     list-style-type: none;
     justify-content: end;
@@ -40,9 +33,14 @@ export const StyledNavBar = styled.div`
   }
 
   @media (max-width: 992px) {
+    .dropdown-toggle::after {
+      display: none;
+    }
     .dropdown-menu-responsive {
       font-size: xx-large;
       padding-left: 30px;
+      position: relative;
+      bottom: 15px;
     }
 
     ul {
