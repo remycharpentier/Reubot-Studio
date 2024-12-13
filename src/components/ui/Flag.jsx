@@ -23,14 +23,12 @@ export default function Flag() {
   ];
 
   return (
-    <>
-      <ul>
-        {countryFlags.map((item) => (
-          <li key={item.id}>
-            <a href="#">{item.img}</a>
-          </li>
-        ))}
-      </ul>
-    </>
+    <div className="d-flex flex-wrap">
+      {countryFlags.map((item) => (
+        <div key={item.id} className="m-1">
+          <a href="#">{item.img}</a>
+        </div>
+      ))}
+    </div>
   );
 }

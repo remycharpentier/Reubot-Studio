@@ -12,13 +12,6 @@ export const StyledMain = styled.div`
   text-shadow: 0 2px 10px #000;
   background-position-x: right;
   transition: background-size 1.5s ease, background-position 1.5s ease;
-
-  /* Responsive */
-  @media (max-width: 1057px) {
-    background-size: cover;
-    background-position-x: center;
-  }
-
   /* Assombrit mon bg */
   &::before {
     content: "";
@@ -29,9 +22,23 @@ export const StyledMain = styled.div`
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
   }
-
   #main-container {
     position: relative;
     padding-block: 50px;
+  }
+  /* Responsive */
+  @media (max-width: 1057px) {
+    background-size: cover;
+    background-position-x: center;
+  }
+  @media (max-width: 576px) {
+    .titre-ligne {
+      h1::before,
+      h1::after,
+      h2::before,
+      h2::after {
+        width: 0;
+      }
+    }
   }
 `;

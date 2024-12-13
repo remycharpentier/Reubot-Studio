@@ -32,6 +32,7 @@ export const StyledHome = styled.div`
     h1::after {
       content: "";
       display: block;
+      color: green;
       position: absolute;
       top: 50%;
       width: 100px;
