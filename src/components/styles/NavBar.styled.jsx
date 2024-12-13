@@ -41,6 +41,7 @@ export const StyledNavBar = styled.div`
       padding-left: 30px;
       position: relative;
       bottom: 15px;
+      z-index: 2;
     }
 
     ul {
