@@ -4,6 +4,7 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import { StyledHeader } from "../styles/Header.styled";
 import brush from "../../assets/img/logo/brush.png";
 import logo2 from "../../assets/img/logo/logo2.png";
+import { Link } from "react-router-dom";
 
 const companyName = "Reubot Studio";
 
@@ -13,11 +14,11 @@ export default function Header({ toggleTheme, isDarkMode }) {
       <Container>
         <Row>
           <Col className="logo-box">
-            <a href="/">
+            <Link to="/home">
               <img src={logo2} alt="Logo" className="logo-img" />
               <h1 className="company-name">{companyName}</h1>
               <img src={brush} alt="Brush" className="brush-img" />
-            </a>
+            </Link>
           </Col>
           <Col className="nav-bar">
             <Form>
