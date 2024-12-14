@@ -4,6 +4,7 @@ export const StyledHeader = styled.div`
   position: relative;
   z-index: 1;
   margin-top: 10px;
+
   .logo-box {
     position: relative;
     a {

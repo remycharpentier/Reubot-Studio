@@ -18,6 +18,10 @@ export const StyledLatestGames = styled.div`
     @media (max-width: 992px) {
       flex: 1 1 calc(50% - 10px);
     }
+    @media (max-width: 576px) {
+      min-width: unset;
+      max-width: 100%;
+    }
   }
 
   .card {
@@ -26,7 +30,7 @@ export const StyledLatestGames = styled.div`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 695px;
+    min-height: 718px;
     overflow: hidden;
 
     img {

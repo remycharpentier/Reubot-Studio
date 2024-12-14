@@ -32,15 +32,11 @@ export const StyledMain = styled.div`
     background-position-x: center;
   }
   @media (max-width: 576px) {
-    .titre-ligne {
-      h1::before,
-      h1::after {
-        width: 0;
-      }
-      h2::before,
-      h2::after {
-        width: 0;
-      }
+    .titre-ligne h1::before,
+    .titre-ligne h1::after,
+    .titre-ligne h2::before,
+    .titre-ligne h2::after {
+      width: 0 !important;
     }
   }
 `;

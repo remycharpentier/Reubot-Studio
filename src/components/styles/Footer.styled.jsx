@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.div`
   position: relative;
+  overflow: hidden;
   .col {
     margin-bottom: 30px;
   }

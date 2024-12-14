@@ -1,12 +1,10 @@
 # Reubot Studio
 
-Reubot Studio est un projet perso e-vitrine en React de studio de développement de jeux vidéo fictif.
-
-## 1. Utiliser l'application sur le web
+Reubot Studio est un projet perso e-vitrine en React de studio de développement de jeux vidéo fictif. Vous pouvez utiliser directement l'application directement sur le web ou cloner le projet.
 
 [https://remycharpentier.github.io/Reubot-Studio/](https://remycharpentier.github.io/Reubot-Studio/)
 
-## 2. Cloner le projet
+## Cloner le projet
 
 1. Ouvrir un terminal
 2. Cloner le projet en local
