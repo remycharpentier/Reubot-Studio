@@ -533,7 +533,7 @@ To suppress this warning, you need to explicitly provide the \`palette.${t}Chann
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 718px;
+    min-height: 772px;
     overflow: hidden;
 
     img {
