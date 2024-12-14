@@ -163,6 +163,7 @@ Error generating stack: `+o.message+`
   position: relative;
   z-index: 1;
   margin-top: 10px;
+
   .logo-box {
     position: relative;
     a {
@@ -322,6 +323,7 @@ Error generating stack: `+o.message+`
   }
 `;function Zw({isDarkMode:e}){return x.jsx(x.Fragment,{children:x.jsx(e3,{children:x.jsx(Tu,{id:"main-container",children:x.jsx(K2,{context:{isDarkMode:e}})})})})}Zw.propTypes={isDarkMode:Ot.bool.isRequired};const t3="/Reubot-Studio/assets/location_logo-CYzAVYxG.png",n3="/Reubot-Studio/assets/linkedin-DgLzhU7_.png",r3="/Reubot-Studio/assets/git-D-GiNryt.png",i3="/Reubot-Studio/assets/facebook-BcNyBvTH.png",o3="/Reubot-Studio/assets/twitter-SwWbRagI.png",s3="/Reubot-Studio/assets/us-B_Qmb0cW.png",a3="/Reubot-Studio/assets/fr-7u_3IVRv.png",l3="/Reubot-Studio/assets/de-DLFWSI67.png",u3="/Reubot-Studio/assets/sp-B1nfyy-h.png",c3="/Reubot-Studio/assets/it-D1OWnJ0_.png",d3="/Reubot-Studio/assets/ch-9KQTkCfy.png",f3=x.jsx("img",{src:s3,alt:"",className:"flag"}),p3=x.jsx("img",{src:a3,alt:"",className:"flag"}),m3=x.jsx("img",{src:l3,alt:"",className:"flag"}),h3=x.jsx("img",{src:u3,alt:"",className:"flag"}),g3=x.jsx("img",{src:c3,alt:"",className:"flag"}),v3=x.jsx("img",{src:d3,alt:"",className:"flag"});function y3(){const e=[{id:1,img:f3},{id:2,img:p3},{id:3,img:m3},{id:4,img:h3},{id:5,img:g3},{id:6,img:v3}];return x.jsx("div",{className:"d-flex flex-wrap",children:e.map(t=>x.jsx("div",{className:"m-1",children:x.jsx("a",{href:"#",children:t.img})},t.id))})}const w3=Qt.div`
   position: relative;
+  overflow: hidden;
   .col {
     margin-bottom: 30px;
   }
@@ -477,6 +479,10 @@ Error generating stack: `+o.message+`
     @media (max-width: 992px) {
       flex: 1 1 calc(50% - 10px);
     }
+    @media (max-width: 576px) {
+      min-width: unset;
+      max-width: 100%;
+    }
   }
 
   .card {
@@ -485,7 +491,7 @@ Error generating stack: `+o.message+`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: 695px;
+    min-height: 718px;
     overflow: hidden;
 
     img {
