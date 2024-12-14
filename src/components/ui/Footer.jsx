@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import logo2 from "../../assets/img/logo/logo2.png";
 import location from "../../assets/img/footer/location_logo.png";
 import linkedin from "../../assets/img/footer/linkedin.png";
@@ -13,10 +12,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import { StyledFooter } from "../styles/Footer.styled";
+import { useTheme } from "../../context/ThemeContext";
 
 const nomEntreprise = "Reubot Studio";
 
-export default function Footer({ isDarkMode }) {
+export default function Footer() {
+  const { isDarkMode } = useTheme();
+
   return (
     <StyledFooter isDarkMode={isDarkMode}>
       <Container>
@@ -79,7 +81,3 @@ export default function Footer({ isDarkMode }) {
     </StyledFooter>
   );
 }
-// Validation des props
-Footer.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired, // Ajoutez cette ligne
-};

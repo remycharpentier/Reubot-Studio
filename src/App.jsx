@@ -6,26 +6,26 @@ import Header from "./components/ui/Header";
 import Main from "./components/ui/Main";
 import Footer from "./components/ui/Footer";
 import createRouter from "./routes/router";
-import { ThemeProvider, CssBaseline } from "@mui/material";
-import { useState } from "react";
-import { lightTheme, darkTheme } from "../src/components/styles/Theme";
+import { useTheme, ThemeProvider } from "./context/ThemeContext";
 
 const Root = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  return (
+    <ThemeProvider>
+      <InnerRoot />
+    </ThemeProvider>
+  );
+};
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+const InnerRoot = () => {
+  const { isDarkMode } = useTheme();
 
   return (
-    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-      {/* Normalisation des styles CSS */}
-      <CssBaseline />
+    <>
       <StyledGlobal isDarkMode={isDarkMode} />
-      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <Main isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
-    </ThemeProvider>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 };
 

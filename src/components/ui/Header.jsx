@@ -1,14 +1,16 @@
-import PropTypes from "prop-types";
 import NavBar from "./NavBar";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { StyledHeader } from "../styles/Header.styled";
 import brush from "../../assets/img/logo/brush.png";
 import logo2 from "../../assets/img/logo/logo2.png";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../context/ThemeContext";
 
 const companyName = "Reubot Studio";
 
-export default function Header({ toggleTheme, isDarkMode }) {
+export default function Header() {
+  const { toggleTheme, isDarkMode } = useTheme();
+
   return (
     <StyledHeader isDarkMode={isDarkMode}>
       <Container>
@@ -42,9 +44,3 @@ export default function Header({ toggleTheme, isDarkMode }) {
     </StyledHeader>
   );
 }
-
-// Validation des props
-Header.propTypes = {
-  toggleTheme: PropTypes.func.isRequired,
-  isDarkMode: PropTypes.bool.isRequired,
-};

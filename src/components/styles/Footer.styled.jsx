@@ -20,8 +20,8 @@ export const StyledFooter = styled.div`
     border-radius: 10px;
     width: 167px;
     margin-top: 5px;
-    filter: ${(props) =>
-      props.isDarkMode
+    filter: ${({ isDarkMode }) =>
+      isDarkMode
         ? "invert(1) drop-shadow(-3px 5px 0px #0B2F53)"
         : "drop-shadow(-3px 5px 0px #f6c9a8)"};
   }
@@ -53,7 +53,7 @@ export const StyledFooter = styled.div`
     left: -53px;
     z-index: -1;
     width: 290px;
-    filter: ${(props) => (props.isDarkMode ? "invert(1)" : "drop-shadow")};
+    filter: ${({ isDarkMode }) => (isDarkMode ? "invert(1)" : "drop-shadow")};
   }
 
   #div-reseaux img {

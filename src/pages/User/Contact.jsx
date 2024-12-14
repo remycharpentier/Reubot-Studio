@@ -1,13 +1,12 @@
-import PropTypes from "prop-types";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
 import { useState } from "react";
-import { useOutletContext } from "react-router-dom";
-
+import { useTheme } from "../../context/ThemeContext";
 import correct from "../../assets/img/form/correct.png";
 
 export default function Contact() {
-  const { isDarkMode } = useOutletContext();
+  const { isDarkMode } = useTheme();
+
   const [formData, setFormData] = useState({
     lastName: "",
     name: "",
@@ -158,7 +157,3 @@ export default function Contact() {
     </>
   );
 }
-// Validation des props
-Contact.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired,
-};
