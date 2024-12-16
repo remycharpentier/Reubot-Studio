@@ -15,6 +15,7 @@ export const StyledHome = styled.div`
     margin-bottom: 20px;
     margin-left: 30px;
   }
+
   .welcome-text {
     padding-right: 40px;
   }

@@ -30,7 +30,7 @@ export const StyledHeader = styled.div`
       .brush-img {
         width: 58vh;
         position: absolute;
-        top: 53px;
+        top: 49px;
         right: -364px;
         z-index: -1;
         filter: ${({ isDarkMode }) =>
@@ -102,6 +102,16 @@ export const StyledHeader = styled.div`
       isDarkMode ? "#121212" : "#F2F2F2"};
   }
   // Responsive
+  @media (min-width: 1980px) {
+    .logo-box {
+      a {
+        .brush-img {
+          top: 39px;
+          right: -383px;
+        }
+      }
+    }
+  }
   @media (max-width: 992px) {
     .row {
       max-height: 98px;

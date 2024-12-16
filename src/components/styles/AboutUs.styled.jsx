@@ -4,16 +4,14 @@ export const StyledAboutUs = styled.div`
   .team-img {
     height: 300px;
     object-fit: cover;
-    width: 600px;
-    float: right;
-    margin-inline: 40px;
+    width: 100%;
     margin-block: 20px;
     border-radius: 10px;
   }
   .team-img2 {
     float: left;
   }
-  .team-img3 {
+  .team-img4 {
     width: 700px;
   }
   .titre-ligne {
@@ -39,23 +37,14 @@ export const StyledAboutUs = styled.div`
     }
   }
 
-  .studio-img {
-    height: 240px;
-    object-fit: cover;
-    width: auto;
-  }
   p {
     margin: 1em 0;
     text-indent: 20px;
   }
-
-  /* Responsive */
-  @media (max-width: 992px) {
-    .team-img {
-      width: 100% !important;
-      margin-inline: 0 !important;
-      float: none !important;
-      margin-bottom: 30px !important;
-    }
+  .studio-img {
+    border-radius: 10px;
+    height: 440px;
+    object-fit: cover;
+    width: 100%;
   }
 `;

@@ -12,6 +12,7 @@ export const StyledMain = styled.div`
   text-shadow: 0 2px 10px #000;
   background-position-x: right;
   transition: background-size 1.5s ease, background-position 1.5s ease;
+  min-height: 63vh;
   /* Assombrit mon bg */
   &::before {
     content: "";
@@ -27,6 +28,9 @@ export const StyledMain = styled.div`
     padding-block: 50px;
   }
   /* Responsive */
+  @media (min-width: 1980px) {
+    min-height: 71vh;
+  }
   @media (max-width: 1057px) {
     background-size: cover;
     background-position-x: center;
