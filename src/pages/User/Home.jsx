@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { StyledHome } from "../../components/styles/Home.styled";
 import LatestGames from "../../components/ui/LatestGames";
 import imgTeam13 from "../../assets/img/company/team13.png";

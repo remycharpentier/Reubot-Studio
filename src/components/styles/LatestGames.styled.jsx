@@ -18,6 +18,11 @@ export const StyledLatestGames = styled.div`
     @media (max-width: 992px) {
       flex: 1 1 calc(50% - 10px);
     }
+    @media (max-width: 768px) {
+      .card {
+        min-height: 652px;
+      }
+    }
     @media (max-width: 576px) {
       min-width: unset;
       max-width: 100%;

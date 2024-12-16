@@ -14,26 +14,26 @@ export default function LatestGames() {
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text className="card-text">
                   <Row>
-                    <Col xs={6} md={5}>
+                    <Col xs={12} md={5}>
                       <strong>Genre</strong>
                     </Col>
-                    <Col xs={6} md={7}>
+                    <Col xs={12} md={7}>
                       {item.genre}
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={6} md={5}>
+                    <Col xs={12} md={5}>
                       <strong>Mode de jeu</strong>
                     </Col>
-                    <Col xs={6} md={7}>
+                    <Col xs={12} md={7}>
                       {item.mode}
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={6} md={5}>
+                    <Col xs={12} md={5}>
                       <strong>Plateforme</strong>
                     </Col>
-                    <Col xs={6} md={7}>
+                    <Col xs={12} md={7}>
                       {item.support}
                     </Col>
                   </Row>
