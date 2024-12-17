@@ -12,14 +12,12 @@ export const StyledLatestGames = styled.div`
     flex: 1 1 calc(25% - 10px);
     min-width: 200px;
     margin-bottom: 10px;
-    cursor: pointer; /* Ajoutez cette ligne pour changer le curseur */
+    cursor: pointer;
     /* Responsive */
     @media (max-width: 992px) {
       flex: 1 1 calc(50% - 10px);
-    }
-    @media (max-width: 768px) {
       .card {
-        min-height: 652px;
+        min-height: 694px;
       }
     }
     @media (max-width: 576px) {
@@ -32,7 +30,7 @@ export const StyledLatestGames = styled.div`
     background: rgba(255, 255, 255, 0.22);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(100, 85, 85, 0.3);
     min-height: 682px;
     overflow: hidden;
     img {
