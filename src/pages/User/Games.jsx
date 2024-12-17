@@ -1,58 +1,69 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { StyledGames } from "../../components/styles/Games.styled";
 import games from "../../constants/Games";
 import { Col, Row } from "react-bootstrap";
 import SwiperGallery from "../../components/ui/SwiperGallery";
 
-import { useRef } from "react";
-
 export default function Games() {
+  const location = useLocation();
   const [selectedGame, setSelectedGame] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const cardsRef = useRef(null);
+
+  // Nombre de jeux à afficher à la fois
+  const gamesToShow = 8;
+
+  useEffect(() => {
+    if (location.state && location.state.selectedGameId) {
+      const game = games.find((g) => g.id === location.state.selectedGameId);
+      setSelectedGame(game);
+    }
+  }, [location.state]);
 
   const display = (game) => {
     setSelectedGame(game);
   };
 
   const scrollLeft = () => {
-    if (cardsRef.current) {
-      cardsRef.current.scrollBy({ left: -200, behavior: "smooth" });
-    }
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + games.length) % games.length
+    );
   };
 
   const scrollRight = () => {
-    if (cardsRef.current) {
-      cardsRef.current.scrollBy({ left: 200, behavior: "smooth" });
-    }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % games.length);
   };
 
   return (
     <>
       <StyledGames>
         <h1>Nos Jeux vidéo</h1>
-        {/* Liste des jeux */}
         <div className="games-list">
           <button className="scroll-button scroll-left" onClick={scrollLeft}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <div className="cards-box" ref={cardsRef}>
-            {games.map((item) => (
-              <button
-                key={item.id}
-                className="box box-4"
-                data-text={item.title}
-                onClick={() => display(item)}
-              >
-                <img src={item.cover} alt="" />
-              </button>
-            ))}
+            {Array.from({ length: gamesToShow }).map((_, index) => {
+              const gameIndex = (currentIndex + index) % games.length;
+              const item = games[gameIndex];
+              return (
+                <button
+                  key={item.id}
+                  className="box box-4"
+                  data-text={item.title}
+                  onClick={() => display(item)}
+                >
+                  <img src={item.cover} alt="" />
+                </button>
+              );
+            })}
           </div>
           <button className="scroll-button scroll-right" onClick={scrollRight}>
             <i className="fas fa-chevron-right"></i>
           </button>
         </div>
         <hr />
-        {/* Jeu selectionné */}
         <div className="selected-game-box">
           {selectedGame && (
             <Row className="row-description">

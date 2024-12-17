@@ -10,6 +10,7 @@ export const StyledGames = styled.div`
     max-width: 100%;
     height: 500px;
     scroll-snap-type: x mandatory;
+    /* Effet mirroir */
     /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
     button {
       scroll-snap-align: start;
@@ -72,12 +73,13 @@ export const StyledGames = styled.div`
   .cards-box:hover .box-2 {
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
   }
-  .box:nth-child(odd) {
+  /* Effet de style */
+  /* .box:nth-child(odd) {
     transform: translateY(-16px);
   }
   .box:nth-child(even) {
     transform: translateY(16px);
-  }
+  } */
   .box::after {
     content: attr(data-text);
     position: absolute;

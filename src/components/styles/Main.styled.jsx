@@ -31,7 +31,7 @@ export const StyledMain = styled.div`
   @media (min-width: 1980px) {
     min-height: 71vh;
   }
-  @media (max-width: 1057px) {
+  @media (max-width: 1580px) {
     background-size: cover;
     background-position-x: center;
   }
