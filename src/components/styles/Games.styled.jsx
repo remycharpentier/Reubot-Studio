@@ -96,35 +96,34 @@ export const StyledGames = styled.div`
     opacity: 1;
     transition-delay: 200ms;
   }
+
+  /* Selected game */
   .selected-game-box {
     margin-block: 40px;
+    max-height: 400px;
   }
-  .row-description {
-    max-height: 450px;
-  }
-  .selected-game-info {
+  .description-col {
     overflow-y: scroll;
     max-height: inherit;
     overflow-y: auto;
-    background-color: rgb(0, 0, 0, 0.6);
-    border-radius: 5px;
-    padding: 12px;
+    p {
+      margin-bottom: 0;
+    }
   }
-
-  .selected-game-info::-webkit-scrollbar {
+  .description-col::-webkit-scrollbar {
     width: 10px;
   }
 
-  .selected-game-info::-webkit-scrollbar-track {
+  .description-col::-webkit-scrollbar-track {
     border-radius: 8px;
     background-color: #e7e7e7;
     border: 1px solid #cacaca;
   }
-  .selected-game-info::-webkit-scrollbar-thumb {
+  .description-col::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #d55959;
   }
-  .selected-game-info::-webkit-scrollbar-thumb:hover {
+  .description-col::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
   .infos-box {
@@ -139,9 +138,12 @@ export const StyledGames = styled.div`
   }
   .selected-game-cover {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
+  }
+  .slider-col {
+    padding-left: 0;
   }
   .selected-game-footage {
     width: 100%;
@@ -149,41 +151,25 @@ export const StyledGames = styled.div`
     object-fit: cover;
     border-radius: 10px;
   }
-  .swiper-box {
-    max-height: 450px;
-    width: 100%;
-    .mySwiper2 img {
-      object-fit: cover;
-      height: 395px;
-      border-radius: 10px 10px 0 0;
-      border: red 1px;
-    }
-  }
-  .swiper-slide img {
-    width: 100%;
-  }
-  .swiper-slide img:not(.mySwiper2 img) {
-    width: 100%;
-    height: 55px;
-    object-fit: cover;
-  }
-
   // Responsive
   @media (max-width: 1200px) {
-    .cover-box {
-      padding-right: 0;
-    }
-    .description-images {
-      margin-top: 12px;
-    }
-    .row-description {
+    .selected-game-box {
       max-height: none;
+    }
+    .slider-col,
+    .selected-game-cover {
+      margin-top: 12px;
+      padding: 12px;
     }
   }
   @media (max-width: 768px) {
-    .cover-box {
+    .cover-col {
       padding: 0;
       margin-top: 12px;
+    }
+    .selected-game-cover {
+      height: 600px;
+      object-position: top;
     }
   }
 `;
