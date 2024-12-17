@@ -526,12 +526,11 @@ To suppress this warning, you need to explicitly provide the \`palette.${t}Chann
     padding: 0;
     gap: 10px;
   }
-
   .game-item {
     flex: 1 1 calc(25% - 10px);
     min-width: 200px;
     margin-bottom: 10px;
-
+    cursor: pointer; /* Ajoutez cette ligne pour changer le curseur */
     /* Responsive */
     @media (max-width: 992px) {
       flex: 1 1 calc(50% - 10px);
@@ -546,7 +545,6 @@ To suppress this warning, you need to explicitly provide the \`palette.${t}Chann
       max-width: 100%;
     }
   }
-
   .card {
     color: #f2f2f2;
     background: rgba(255, 255, 255, 0.22);
@@ -555,24 +553,20 @@ To suppress this warning, you need to explicitly provide the \`palette.${t}Chann
     border: 1px solid rgba(255, 255, 255, 0.3);
     min-height: 682px;
     overflow: hidden;
-
     img {
       max-height: 400px;
       object-fit: cover;
       width: 100%;
     }
   }
-
   .card-body {
     display: flex;
     flex-direction: column;
     position: relative;
   }
-
   .card-text {
     margin: 0;
   }
-
   .price {
     margin-top: auto;
     align-self: flex-end;
