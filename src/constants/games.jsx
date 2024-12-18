@@ -190,7 +190,7 @@ const games = [
     genre: "MOBA",
     mode: "Multijoueur",
     support: "PC",
-    price: 0,
+    price: "Free to Play",
     resume:
       "League of Legends est un jeu de stratégie en temps réel où deux équipes s'affrontent pour détruire la base ennemie. Choisissez parmi des centaines de champions, développez des stratégies et travaillez en équipe pour remporter la victoire. Un jeu compétitif avec une communauté active.",
   },

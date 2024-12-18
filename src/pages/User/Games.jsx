@@ -76,6 +76,7 @@ export default function Games() {
             <div className="infos-box">
               <strong>Prix:</strong> <span>{selectedGame.price}</span>
             </div>
+            <br />
             <p>{selectedGame.resume}</p>
           </Col>
           {/* Cover */}
