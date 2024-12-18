@@ -2,6 +2,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { StyledContact } from "../../components/styles/Contact.styled";
 import { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
+import emailjs from "emailjs-com";
 import correct from "../../assets/img/form/correct.png";
 
 export default function Contact() {
@@ -13,8 +14,10 @@ export default function Contact() {
     email: "",
     phone: "",
     message: "",
+    toName: "Remy",
   });
   const [feedbackMessage, setFeedbackMessage] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -22,22 +25,29 @@ export default function Contact() {
       [name]: value,
     });
   };
+
+  // Imports via var d'env
+  const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Données du formulaire :", formData);
-    // Envoyer la data en console, front ou back
-    // Ici dans la console
 
-    // Simule un envoi de données
-    const isSuccess = true;
+    // Envoyer l'e-mail via EmailJS
+    emailjs.send(serviceId, templateId, formData, userId).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setFeedbackMessage("Merci ! Votre message a été envoyé avec succès !");
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        setFeedbackMessage(
+          "Une erreur s'est produite lors de l'envoi de votre message."
+        );
+      }
+    );
 
-    if (isSuccess) {
-      setFeedbackMessage("Merci ! Votre message a été envoyé avec succès !");
-    } else {
-      setFeedbackMessage(
-        "Une erreur s'est produite lors de l'envoi de votre message."
-      );
-    }
     // Réinitialise le form si nécessaire
     setFormData({
       lastName: "",
@@ -45,8 +55,10 @@ export default function Contact() {
       email: "",
       phone: "",
       message: "",
+      toName: "Remy",
     });
   };
+
   return (
     <>
       <StyledContact isDarkMode={isDarkMode}>
@@ -108,7 +120,7 @@ export default function Contact() {
               </Button>
             </Form>
             {feedbackMessage && (
-              <span className="feebackMessage">
+              <span className="feedbackMessage">
                 <img src={correct} alt="" className="correct" />
                 {feedbackMessage}
               </span>
